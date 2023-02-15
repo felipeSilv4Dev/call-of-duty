@@ -1,0 +1,56 @@
+.menu {
+  background-color: #110c09;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0.9rem 1.2rem;
+  align-items: center;
+}
+.menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+.menu-logo {
+  max-width: 9rem;
+}
+.menu-list a {
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: #6c6967;
+}
+.menu-list a:hover {
+  color: #f8f8ff;
+}
+.menu-list a[href^="#login"] {
+  padding-right: 0.8rem;
+  border-right: 2px solid #6c6967;
+}
+#button {
+  background-color: #7bc42d;
+  padding: 0.8rem 1.5rem;
+  color: #110c09;
+  border-radius: 4px;
+}
+#button:hover {
+  transition: 0.3s;
+  background-color: #599b13;
+  color: #f8f8ff;
+}
+@media (max-width: 1024px) {
+  .menu-list a {
+    font-size: 0.5rem;
+  }
+  .menu-logo {
+    max-width: 6rem;
+  }
+  #button {
+    padding: 0.6rem 1.2rem;
+  }
+}
+@media (max-width: 820px) {
+  .menu-list {
+    display: none;
+  }
+}
