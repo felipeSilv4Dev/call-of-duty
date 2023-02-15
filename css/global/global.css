@@ -1,7 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
-  box-sizing: 0rem;
+  box-sizing: border-box;
 }
 img {
   max-width: 100%;
@@ -13,5 +13,5 @@ a {
   text-decoration: none;
 }
 body {
-  font-family: "Modern Warfare", sans-serif;
+  font-family: "Modern Warfare", Arial, Helvetica, sans-serif;
 }
