@@ -1,0 +1,206 @@
+.features {
+  position: relative;
+  background-image: url("/img/identidade/img-bg-id.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #110c09;
+}
+.cortex-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4rem;
+  height: 100%;
+}
+.cortex-2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 4rem;
+  height: 100%;
+}
+.features-bg {
+  padding: 3rem 7.6rem 1rem 7.6rem;
+}
+.features-conteudo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 1.5rem;
+  gap: 1.7rem;
+}
+.features-conteudo img {
+  border-radius: 1px;
+}
+
+.features-conteudo-info-1 h2 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #7bc42d;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  padding: 4rem 0rem 0.8rem 0rem;
+}
+.features-conteudo-info-1 p {
+  font-family: "TT Firs Neue Trl", Arial, Helvetica, sans-serif;
+  color: #fff;
+  font-size: 0.9rem;
+  font-style: normal;
+  line-height: 1.3;
+}
+
+.features-conteudo-info-2 h2 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #7bc42d;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  padding: 4rem 0rem 0.8rem 0rem;
+}
+.features-conteudo-info-2 p {
+  font-family: "TT Firs Neue Trl", Arial, Helvetica, sans-serif;
+  color: #fff;
+  font-size: 1rem;
+  font-style: normal;
+  line-height: 1.3;
+}
+
+.features-conteudo-info-3 h2 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #7bc42d;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  padding: 4rem 0rem 0.8rem 0rem;
+}
+.features-conteudo-info-3 p {
+  font-family: "TT Firs Neue Trl", Arial, Helvetica, sans-serif;
+  color: #fff;
+  font-size: 1rem;
+  font-style: normal;
+  line-height: 1.3;
+}
+.features-conteudo:nth-child(3) {
+  display: flex;
+  align-items: center;
+}
+.features-conteudo:nth-child(3) img {
+  height: 19rem;
+}
+.features-conteudo-info-4 h2 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #7bc42d;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  padding-bottom: 0.8rem;
+}
+.features-conteudo-info-4 p {
+  font-family: "TT Firs Neue Trl", Arial, Helvetica, sans-serif;
+  color: #fff;
+  font-size: 1rem;
+  font-style: normal;
+  line-height: 1.3;
+  padding-bottom: 0.2rem;
+}
+.features-conteudo-info-4 span {
+  font-family: "TT Firs Neue Trl", Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  color: #7bc42d;
+}
+@media (max-width: 1024px) {
+  .features-bg {
+    padding: 3rem 7rem 1rem 7rem;
+  }
+  .features-conteudo-info-1 h2,
+  .features-conteudo-info-2 h2,
+  .features-conteudo-info-3 h2 {
+    font-size: 0.9rem;
+    padding-top: 1rem;
+  }
+  .features-conteudo:nth-child(3) img {
+    height: 13em;
+  }
+}
+@media (max-width: 912px) {
+  .features-conteudo {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  .f1-img-2 {
+    width: 100%;
+    grid-column: 1/-1;
+  }
+  .features-conteudo-info-3 {
+    grid-column: 1/-1;
+  }
+  .features-conteudo:nth-child(3) {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .features-conteudo:nth-child(3) img {
+    grid-column: 1/-1;
+    width: 100%;
+  }
+  .cortex-1,
+  .cortex-2 {
+    width: 3.3rem;
+  }
+}
+@media (max-width: 540px) {
+  .features-bg {
+    padding: 2rem 3rem 1rem 3rem;
+  }
+  .features-conteudo {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .features-conteudo-info-1 h2,
+  .features-conteudo-info-2 h2,
+  .features-conteudo-info-3 h2 {
+    padding-bottom: 0.6rem;
+  }
+  .features-conteudo-info-1 p,
+  .features-conteudo-info-2 p,
+  .features-conteudo-info-3 p {
+    font-size: 0.9rem;
+  }
+  .features-conteudo:nth-child(3) img {
+    height: 12rem;
+  }
+  .features-conteudo:nth-child(3) p,
+  .features-conteudo:nth-child(3) span {
+    font-size: 0.9rem;
+  }
+  .cortex-1,
+  .cortex-2 {
+    width: 1.5rem;
+  }
+}
+@media (max-width: 280px) {
+  .features-bg {
+    padding: 2rem 2rem 1rem 2rem;
+  }
+  .features-conteudo-info-1 p,
+  .features-conteudo-info-2 p,
+  .features-conteudo-info-3 p {
+    font-size: 0.7rem;
+  }
+  .features-conteudo-info-1 h2,
+  .features-conteudo-info-2 h2,
+  .features-conteudo-info-3 h2 {
+    font-size: 0.7rem;
+    padding-top: 0rem;
+  }
+  .cortex-1,
+  .cortex-2 {
+    width: 1rem;
+  }
+  .features-conteudo:nth-child(3) img {
+    height: 10rem;
+  }
+  .features-conteudo:nth-child(3) p,
+  .features-conteudo:nth-child(3) span {
+    font-size: 0.7rem;
+  }
+}

@@ -22,7 +22,7 @@
   margin-top: 1.6rem;
 }
 .home-p p {
-  font-family: "TT Firs Neue Trl";
+  font-family: "TT Firs Neue Trl", Arial, Helvetica, sans-serif;
   font-weight: 700;
   color: #fff;
   font-size: 1.2rem;
@@ -54,14 +54,15 @@
   align-items: center;
   gap: 0.5rem;
   background-color: transparent;
-  color: #fff;
-  border: 2px solid #fff;
+  color: #ccc;
+  border: 2px solid #ccc;
   font-size: 0.7rem;
   padding: 0.9rem 1.5rem;
 }
 .home-button a:nth-child(2):hover {
   transition: 0.3s;
-  box-shadow: 2px -2px 5px #c8c8c8, -2px 2px 5px #c8c8c8;
+  color: #fff;
+  border: 2px solid #fff;
 }
 .home-button a:nth-child(2) img {
   height: 1.2rem;
