@@ -1,0 +1,123 @@
+.banner-camp {
+  background-image: url("/img/principal/principal-2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 20rem;
+}
+
+.camp-info {
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+}
+
+.camp-info h2 {
+  color: #fff;
+  font-size: 1.3rem;
+  line-height: 1.2;
+  padding: 20rem 13rem 1rem 0rem;
+}
+.camp-info p {
+  font-family: "TT Firs Neue";
+  color: #f1f1f1;
+  font-size: 0.94rem;
+  line-height: 1.1rem;
+  padding: 0rem 6rem 0rem 48.3rem;
+}
+
+@media (max-width: 1280px) {
+  .camp-info h2 {
+    padding-right: 8rem;
+  }
+  .camp-info p {
+    padding-left: 47rem;
+  }
+}
+@media (max-width: 1024px) {
+  .banner-camp {
+    height: 100%;
+    padding-bottom: 10rem;
+  }
+  .camp-info h2 {
+    font-size: 1rem;
+    padding-right: 7rem;
+  }
+  .camp-info p {
+    font-size: 1rem;
+    padding-right: 2rem;
+    padding-left: 37rem;
+  }
+}
+
+@media (max-width: 912px) {
+  .banner-camp {
+    padding-bottom: 13rem;
+    width: 100vw;
+  }
+  .camp-info {
+    display: grid;
+    grid-template-columns: 310px 1fr;
+    padding: 1.5rem;
+    height: 100%;
+    padding-right: 3rem;
+  }
+  .camp-info h2 {
+    font-size: 1rem;
+    grid-column: 2;
+    padding: 9rem 0rem 1rem 0rem;
+  }
+  .camp-info p {
+    grid-column: 2;
+    font-size: 1rem;
+    padding: 0rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .banner-camp {
+    height: 100vw;
+    padding: 0rem;
+  }
+  .camp-info {
+    padding: 1.5rem;
+    grid-template-columns: 1fr;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .camp-info h2 {
+    padding: 0rem;
+    margin-top: 22rem;
+  }
+  .camp-info p {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 414px) {
+  .camp-info h2 {
+    margin-top: 10rem;
+  }
+  .camp-info p {
+    margin-top: 0rem;
+  }
+}
+
+@media (max-width: 393px) {
+  .camp-info h2 {
+    margin-top: 8rem;
+  }
+  .camp-info p {
+    font-size: 0.87rem;
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 280px) {
+  .camp-info h2 {
+    margin-top: 1.2rem;
+    font-size: 0.79rem;
+  }
+  .camp-info p {
+    margin-top: 0.2rem;
+    font-size: 0.7rem;
+  }
+}
