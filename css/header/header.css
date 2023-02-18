@@ -21,7 +21,7 @@
   color: #6c6967;
 }
 .menu-list a:hover {
-  color: #f8f8ff;
+  color: #f5f5f5;
 }
 .menu-list a[href^="#login"] {
   padding-right: 0.8rem;
@@ -36,7 +36,7 @@
 #button:hover {
   transition: 0.3s;
   background-color: #599b13;
-  color: #f8f8ff;
+  color: #f5f5f5;
 }
 @media (max-width: 1024px) {
   .menu-list a {
