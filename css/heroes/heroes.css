@@ -1,0 +1,252 @@
+.heroes-bg {
+  background-image: url("/img/identidade/img-bg-id.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #111;
+  padding: 2.6rem 7.6rem 2.6rem 7.6rem;
+}
+.heroes-bg > h2 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.69rem;
+  padding-bottom: 2rem;
+}
+.heroes {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 5rem;
+}
+.heroes figure:first-child h3 {
+  color: #fff;
+}
+.heroes figure h3 {
+  font-size: 0.77rem;
+  padding-top: 0.5rem;
+  margin-bottom: 2rem;
+  color: #6c6967;
+}
+
+.heroes-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 0.5rem;
+  gap: 2rem;
+}
+.heroes-dt-f {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.2rem;
+}
+
+.dt-titulo {
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.3rem;
+  letter-spacing: 0.1rem;
+  padding: 0.8rem 0.8rem 2rem 0.2rem;
+}
+.heroes-dt-f li h2 {
+  color: #7bc42d;
+  font-size: 1.1rem;
+  padding-bottom: 1rem;
+}
+.heroes-dt-f li p {
+  color: #fff;
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+.heroes-dt-weapons h2 {
+  color: #7bc42d;
+  font-size: 1.1rem;
+  padding-bottom: 1rem;
+}
+.heroes-dt-weapons p {
+  font-family: "TT Firs Neue", Arial, Helvetica, sans-serif;
+  color: #a09e9d;
+  font-size: 0.91rem;
+  padding-bottom: 2rem;
+}
+.heroes-bio h2 {
+  color: #7bc42d;
+  font-size: 1.1rem;
+}
+.heroes-bio h3 {
+  color: #fff;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  margin-bottom: 0.6rem;
+}
+.heroes-bio p {
+  font-family: "TT Firs Neue", Arial, Helvetica, sans-serif;
+  color: #a09e9d;
+  font-size: 0.94rem;
+}
+
+@media (max-width: 1280px) {
+  .heroes-dt-f li h2,
+  .heroes-bio h2,
+  .heroes-dt-weapons h2,
+  .dt-titulo {
+    font-size: 0.9rem;
+  }
+  .heroes figure h3 {
+    font-size: 0.71rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .heroes-bg {
+    padding: 3rem 7rem 2.6rem 7rem;
+  }
+  .heroes-dt-f {
+    gap: 1rem;
+  }
+  .dt-titulo {
+    padding-bottom: 0.8rem;
+  }
+  .heroes figure h3 {
+    font-size: 0.61rem;
+  }
+  .heroes {
+    gap: 2rem;
+  }
+  .heroes-dt-f h2 {
+    font-size: 0.8rem;
+  }
+  .heroes-info img {
+    height: 100%;
+  }
+  .heroes-dt-f p,
+  .heroes-dt-weapons p,
+  .heroes-bio p {
+    font-size: 0.7rem;
+  }
+  .heroes-dt-f li p {
+    margin-bottom: 0.6rem;
+  }
+  .heroes-dt-weapons p {
+    padding-bottom: 0.6rem;
+  }
+  .heroes-dt-weapons h2 {
+    padding-bottom: 0.6rem;
+  }
+  .heroes-bio h3 {
+    margin-top: 0.5rem;
+  }
+}
+
+@media (max-width: 912px) {
+  .heroes {
+    overflow-x: scroll;
+  }
+  .heroes img {
+    max-width: 20rem;
+  }
+  .heroes figure h3 {
+    font-size: 1.2rem;
+  }
+
+  .heroes-info {
+    grid-template-columns: 1fr;
+  }
+  .heroes-info img {
+    width: 100%;
+  }
+  .heroes-dt-f {
+    grid-template-columns: 1fr 1fr;
+  }
+  .dt-titulo {
+    font-size: 1.5rem;
+    padding: 0rem 0rem 1.5rem 0rem;
+  }
+  .heroes-dt-f li h2,
+  .heroes-bio h2,
+  .heroes-dt-weapons h2 {
+    font-size: 2rem;
+  }
+  .heroes-bio h3 {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  .heroes-dt-f li p {
+    font-size: 1.5rem;
+  }
+  .heroes-dt-weapons p,
+  .heroes-bio p {
+    font-size: 1.2rem;
+  }
+  .heroes-bio h3 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .heroes-bg {
+    padding: 2rem 3rem 1rem 3rem;
+  }
+  .heroes img {
+    max-width: 13rem;
+  }
+  .heroes-bg > h2 {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+  }
+  .heroes figure h3 {
+    font-size: 1rem;
+    margin-bottom: 1.3rem;
+  }
+  .heroes-info {
+    gap: 0.5rem;
+  }
+  .heroes-dt-f li h2,
+  .dt-titulo,
+  .heroes-bio h2,
+  .heroes-dt-weapons h2 {
+    font-size: 0.98rem;
+  }
+  .heroes-dt-f {
+    gap: 1rem;
+  }
+  .heroes-bio h3 {
+    font-size: 0.8rem;
+    margin-top: 0.6rem;
+  }
+
+  .heroes-dt-weapons p,
+  .heroes-bio p,
+  .heroes-dt-f li p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 280px) {
+  .heroes-bg {
+    padding: 2rem 2rem 1rem 2rem;
+  }
+  .heroes-bg > h2 {
+    font-size: 1rem;
+  }
+  .heroes-dt-f {
+    gap: 0.7rem;
+  }
+  .dt-titulo {
+    padding-bottom: 0.8rem;
+  }
+  .heroes-dt-f li h2,
+  .dt-titulo,
+  .heroes-bio h2,
+  .heroes-dt-weapons h2 {
+    font-size: 0.7rem;
+  }
+  .heroes-dt-weapons p {
+    padding-bottom: 1rem;
+  }
+  .heroes-dt-weapons p,
+  .heroes-bio p,
+  .heroes-dt-f li p {
+    font-size: 0.7rem;
+  }
+  .heroes-bio h3 {
+    font-size: 0.7rem;
+  }
+}
