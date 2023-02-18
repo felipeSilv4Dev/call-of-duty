@@ -1,0 +1,119 @@
+.gun-bg {
+  background-image: url("/img/armas/img-bg-arm.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #110c09;
+  padding: 2.6rem 7.6rem 2.6rem 7.6rem;
+  position: relative;
+}
+
+.gun {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.gun-button {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.gun h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #f5f5f5;
+}
+.gun-button span {
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: #f5f5f5;
+}
+.gun-button a {
+  font-size: 0.94rem;
+  text-transform: uppercase;
+  padding: 1.1rem 1.52rem;
+  background-color: #7bc42d;
+  border-radius: 2px;
+  color: #110c09;
+}
+.gun-button a:hover {
+  transition: 0.3s;
+  background-color: #599b13;
+  color: #f5f5f5;
+}
+.gun-bg p {
+  font-family: "TT Firs Neue", Arial, Helvetica, sans-serif;
+  color: #f5f5f5;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+  max-width: 47ch;
+}
+@media (max-width: 820px) {
+  .gun h2 {
+    font-size: 1.1rem;
+  }
+  .gun-button a {
+    font-size: 0.7;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .gun-bg {
+    padding: 2rem 3rem;
+  }
+  .gun {
+    margin-bottom: 1.7rem;
+  }
+  .gun-button a {
+    font-size: 0.7rem;
+    padding: 0.7rem;
+  }
+  .gun-bg h2 {
+    font-size: 0.9rem;
+  }
+  .gun-bg p {
+    margin-bottom: 1.7rem;
+  }
+}
+@media (max-width: 414px) {
+  .gun-button a {
+    font-size: 0.4rem;
+    padding: 0.5rem;
+  }
+  .gun-button span {
+    font-size: 0.5rem;
+  }
+  .gun-button {
+    gap: 1rem;
+  }
+  .gun-bg h2 {
+    font-size: 0.76rem;
+  }
+  .gun-bg p {
+    font-size: 0.78rem;
+    margin-bottom: 1.7rem;
+  }
+}
+@media (max-width: 280px) {
+  .gun-bg {
+    padding: 2rem;
+  }
+  .gun {
+    margin-bottom: 1.3rem;
+    flex-wrap: wrap;
+  }
+  .gun-bg h2 {
+    font-size: 0.8rem;
+  }
+  .gun-button {
+    margin-top: 1rem;
+    gap: 0.5rem;
+  }
+  .gun-bg p {
+    font-size: 0.65rem;
+    margin-bottom: 1.3rem;
+  }
+}
