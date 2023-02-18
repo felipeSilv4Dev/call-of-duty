@@ -16,10 +16,10 @@
   grid-template-columns: repeat(5, 1fr);
   gap: 5rem;
 }
-.heroes figure:first-child h3 {
+.heroes div:first-child h3 {
   color: #fff;
 }
-.heroes figure h3 {
+.heroes div h3 {
   font-size: 0.77rem;
   padding-top: 0.5rem;
   margin-bottom: 2rem;
@@ -89,7 +89,7 @@
   .dt-titulo {
     font-size: 0.9rem;
   }
-  .heroes figure h3 {
+  .heroes div h3 {
     font-size: 0.71rem;
   }
 }
@@ -104,7 +104,7 @@
   .dt-titulo {
     padding-bottom: 0.8rem;
   }
-  .heroes figure h3 {
+  .heroes div h3 {
     font-size: 0.61rem;
   }
   .heroes {
@@ -142,7 +142,7 @@
   .heroes img {
     max-width: 20rem;
   }
-  .heroes figure h3 {
+  .heroes div h3 {
     font-size: 1.2rem;
   }
 
@@ -191,7 +191,7 @@
     font-size: 1.5rem;
     padding-bottom: 1rem;
   }
-  .heroes figure h3 {
+  .heroes div h3 {
     font-size: 1rem;
     margin-bottom: 1.3rem;
   }
