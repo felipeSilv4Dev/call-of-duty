@@ -50,6 +50,11 @@
   line-height: 1.2;
   max-width: 47ch;
 }
+@media (max-width: 1024px) {
+  .gun-bg {
+    padding: 3rem 7rem 1rem 7rem;
+  }
+}
 @media (max-width: 820px) {
   .gun h2 {
     font-size: 1.1rem;
