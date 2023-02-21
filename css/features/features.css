@@ -177,6 +177,7 @@
     width: 1.5rem;
   }
 }
+
 @media (max-width: 280px) {
   .features-bg {
     padding: 2rem 2rem 1rem 2rem;
@@ -205,5 +206,8 @@
   .features-conteudo:nth-child(3) p,
   .features-conteudo:nth-child(3) span {
     font-size: 0.7rem;
+  }
+  .feature-2-conteudo img {
+    height: 100%;
   }
 }

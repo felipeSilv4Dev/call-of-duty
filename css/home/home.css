@@ -54,8 +54,8 @@
   align-items: center;
   gap: 0.5rem;
   background-color: transparent;
-  color: #6c6967;
-  border: 3px solid #6c6967;
+  color: #ccc;
+  border: 3px solid #ccc;
   font-size: 0.7rem;
   padding: 0.9rem 1.5rem;
 }
