@@ -1,0 +1,181 @@
+.modern-bg {
+  background-image: url("/img/galeria/modern-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #110c09;
+  padding: 2.6rem 7.6rem 2.6rem 7.6rem;
+}
+.modern-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5rem 0rem 2rem 0rem;
+}
+
+.modern-header h2 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #f5f5f5;
+  max-width: 40ch;
+}
+.modern-header #button {
+  border-radius: 2px;
+}
+.modern-img {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.modern-marca {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modern-marca h2 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #f5f5f5;
+  font-style: normal;
+}
+.marcas {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  place-items: center;
+  gap: 1.5rem;
+}
+.marcas div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 31px 45px 32px 45px;
+}
+.marcas div:nth-child(2) {
+  border-radius: 1px;
+  background-color: #f5f5f5;
+}
+.marcas div:nth-child(2) h3 {
+  color: #000;
+}
+.marcas div img {
+  height: 3rem;
+}
+.marcas div h3 {
+  color: #f5f5f5;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 912px) {
+  .modern-bg {
+    padding: 2rem 7rem;
+  }
+  .modern-header h2 {
+    font-size: 1.1rem;
+  }
+  .modern-img {
+    grid-template-columns: 1fr;
+  }
+  .marcas {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 540px) {
+  .modern-bg {
+    padding: 2rem 3rem;
+  }
+  .modern-header {
+    margin-top: 2rem;
+  }
+  .modern-header h2 {
+    font-size: 0.7rem;
+    max-width: 43ch;
+  }
+  .modern-header #button {
+    padding: 0.7rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  .modern-marca {
+    margin-top: 4rem;
+  }
+  .modern-marca h2 {
+    font-size: 1rem;
+  }
+  .marcas {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+  }
+  .marcas div {
+    width: 100%;
+    padding: 1.5rem 3rem;
+  }
+  .marcas div:nth-child(1),
+  .marcas div:nth-child(3) {
+    padding: 11px 12px 12px 12px;
+  }
+  .marcas div img {
+    height: 2rem;
+  }
+  .marcas div h3 {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 414px) {
+  .modern-header {
+    display: block;
+  }
+  .modern-header h2 {
+    margin-bottom: 1rem;
+  }
+  .modern-marca {
+    margin-top: 2rem;
+  }
+  .modern-marca h2 {
+    font-size: 0.83rem;
+  }
+
+  .marcas div {
+    padding: 0.8rem 1.8rem;
+  }
+}
+
+@media (max-width: 280px) {
+  .modern-bg {
+    padding: 2rem;
+  }
+  .modern-header {
+    margin-top: 0rem;
+  }
+
+  .modern-header #button {
+    padding: 0.6rem 0.8rem;
+    font-size: 0.5rem;
+  }
+  .modern-img {
+    gap: 0.9rem;
+  }
+  .modern-marca {
+    margin-top: 2rem;
+  }
+  .modern-marca h2 {
+    font-size: 0.61rem;
+  }
+  .marcas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .marcas div {
+    padding: 10px 15px 10px 15px;
+  }
+  .marcas div img {
+    height: 1.3rem;
+  }
+  .marcas div h3 {
+    font-size: 0.5rem;
+  }
+}
