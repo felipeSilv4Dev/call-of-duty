@@ -63,7 +63,7 @@
 .home-button a:nth-child(2):hover {
   transition: 0.3s;
   color: #fff;
-  border: 3px solid #fff;
+  border: 2px solid #fff;
 }
 .home-button a:nth-child(2) img {
   height: 1.2rem;
