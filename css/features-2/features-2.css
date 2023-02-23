@@ -218,6 +218,9 @@
   .galery {
     padding: 2rem;
   }
+  .galery-header h2 {
+    font-size: 1rem;
+  }
   .feature-2 > h2 {
     font-size: 0.7rem;
   }
@@ -232,7 +235,6 @@
     font-size: 0.79rem;
     padding-top: 0rem;
   }
-
   .cortex-3 {
     width: 1rem;
   }
