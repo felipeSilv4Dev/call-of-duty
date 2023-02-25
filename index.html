@@ -8,12 +8,15 @@
     <title>Call Of Duty</title>
   </head>
   <body>
-    <header class="menu">
-      <div>
-        <ul class="menu-list">
-          <li>
-            <img class="menu-logo" src="./img/principal/logo.png" alt="logo" />
-          </li>
+    <header class="menu" id="menu">
+      <div class="menu-header">
+        <img
+          id="menu"
+          class="menu-logo"
+          src="./img/principal/logo.png"
+          alt="logo"
+        />
+        <ul class="menu-list" id="menu-list">
           <li>
             <a href="#">Games ∨</a>
           </li>
@@ -24,29 +27,34 @@
         </ul>
       </div>
       <div>
-        <ul class="menu-list">
+        <ul class="menu-list" id="menu-list">
           <li><a href="#login">login</a></li>
           <li><a href="#"> sing up</a></li>
           <li><a href="#">么 my call of duty</a></li>
           <li><a id="button" href="#">pre‑order</a></li>
         </ul>
       </div>
+      <div><button id="btn"></button></div>
     </header>
 
     <section class="home-bg">
-      <div class="home">
-        <h1>
+      <div class="home" id="home">
+        <h1 id="home">
           WELCOME TO THE NEW <br />
           ERA OF CALL OF DUTY®
         </h1>
         <div class="home-p">
-          <p>New gameplay innovations. All-new gun handling. Advanced AI.</p>
-          <p>Modern Warfare® II brings you a global campaign,</p>
-          <p>immersive multiplayer combat and narrative-driven Special Ops.</p>
+          <p id="home">
+            New gameplay innovations. All-new gun handling. Advanced AI.
+          </p>
+          <p id="home">Modern Warfare® II brings you a global campaign,</p>
+          <p id="home">
+            immersive multiplayer combat and narrative-driven Special Ops.
+          </p>
         </div>
         <div class="home-button">
-          <a href="#">pre‑order</a>
-          <a href="#"
+          <a id="home" href="#">pre‑order</a>
+          <a id="home" href="#"
             ><img src="./img/principal/play-p.png" alt="" /> Watch trailer</a
           >
         </div>
@@ -280,18 +288,22 @@
       </div>
 
       <div class="galery-img">
-        <div>
-          <img src="./img/galeria/img-1-g.png" alt="imagem 1" />
+        <div class="galery-p">
+          <img id="img-p" src="./img/galeria/img-1-g.png" alt="imagem 1" />
+          <img id="img-2" src="./js-img/img-2-j.png" alt="imagem-2" />
+          <img id="img-3" src="./js-img/img-3-j.png" alt="imagem-3" />
+          <img id="img-4" src="./js-img/img-4-j.png" alt="imagem-4" />
+          <img id="img-5" src="./js-img/img-5-j.png" alt="imagem-5" />
         </div>
 
         <div class="galery-img-secund">
-          <div>
-            <img src="./img/galeria/img-2-g.png" alt="imagem 2" />
-            <img src="./img/galeria/img-3-g.png" alt="imagem 3" />
+          <div class="secun">
+            <img id="img-2" src="./img/galeria/img-2-g.png" alt="" />
+            <img id="img-3" src="./img/galeria/img-3-g.png" alt="imagem 3" />
           </div>
-          <div>
-            <img src="./img/galeria/img-4-g.png" alt="imagem 4" />
-            <img src="./img/galeria/img-5-g.png" alt="imagem 5" />
+          <div class="secun">
+            <img id="img-4" src="./img/galeria/img-4-g.png" alt="imagem 4" />
+            <img id="img-5" src="./img/galeria/img-5-g.png" alt="imagem 5" />
           </div>
         </div>
         <img class="cortex-3" src="/img/galeria/cortex-3.png" alt="" />
@@ -402,7 +414,6 @@
       <div class="footer-img">
         <div class="img-es">
           <img src="./img/footer/img-1-fo.png" alt="" />
-
           <img src="./img/footer/img-2-fo.png" alt="" />
         </div>
         <div>
@@ -436,5 +447,6 @@
         </p>
       </div>
     </section>
+    <script src="./js/teste.js"></script>
   </body>
 </html>

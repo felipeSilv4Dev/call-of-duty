@@ -58,6 +58,21 @@
 .galery-img-secund img:nth-child(1) {
   margin-bottom: 0.7rem;
 }
+.galery-p #img-2,
+.galery-p #img-3,
+.galery-p #img-4,
+.galery-p #img-5,
+.galery-p #img-p {
+  display: none;
+}
+
+.galery-p #img-2.active,
+.galery-p #img-3.active,
+.galery-p #img-4.active,
+.galery-p #img-5.active,
+.galery-p #img-p.active {
+  display: block;
+}
 .cortex-3 {
   position: absolute;
   right: 0;
