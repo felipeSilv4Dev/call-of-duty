@@ -27,3 +27,38 @@ function initGalery() {
 }
 
 initGalery();
+
+function menuMobile() {
+  const btn = document.getElementById("btn");
+  const menuList = document.querySelectorAll("#menu-list");
+  const menu = document.querySelector(".menu");
+  const home = document.querySelector(".home");
+
+  btn.innerText = "︻╦̵̵͇╤─";
+
+  if (btn) {
+    function activeMenu(event) {
+      console.log(event.target.id);
+      console.log(event.target);
+      if (event.target.id === "menu" || event.target.id === "home") {
+        menuList.forEach((i) => {
+          if (i.classList.contains("active")) {
+            i.classList.remove("active");
+          }
+        });
+        btn.classList.remove("active");
+      }
+      if (event.target.id == "btn") {
+        btn.classList.toggle("active");
+        menuList.forEach((item) => {
+          item.classList.toggle("active");
+        });
+      }
+      if (btn.classList.contains("active")) btn.innerText = "¤=[]:::::>";
+      else btn.innerText = "︻╦̵̵͇╤─";
+    }
+  }
+  menu.addEventListener("click", activeMenu);
+  home.addEventListener("click", activeMenu);
+}
+menuMobile();
