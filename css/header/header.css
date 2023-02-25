@@ -33,6 +33,8 @@
   border-right: 2px solid #6c6967;
 }
 #menu-list #button {
+  text-transform: uppercase;
+  font-size: 0.8rem;
   background-color: #7bc42d;
   padding: 0.8rem 1.5rem;
   color: #110c09;
@@ -131,6 +133,9 @@
 
 @media (max-width: 414px) {
   #menu-list.active a {
-    font-size: 0.451rem;
+    font-size: 0.6rem;
+  }
+  #menu-list #button {
+    font-size: 0.6rem;
   }
 }
