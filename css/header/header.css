@@ -122,28 +122,25 @@
     gap: 1.3rem;
   }
   #menu-list.active:nth-child(1) {
-    top: 6.05rem;
+    top: 9rem;
   }
   #menu-list.active a {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
   }
   #menu-list #button {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
   }
 }
 
 @media (max-width: 393px) {
-  #menu-list.active {
-    gap: 1.3rem;
-  }
   #menu-list.active:nth-child(1) {
     top: 8.5rem;
   }
   #menu-list.active a {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
   }
   #menu-list #button {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
   }
 }
 @media (max-width: 280px) {
