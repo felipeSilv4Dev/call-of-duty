@@ -122,7 +122,7 @@
     gap: 1.3rem;
   }
   #menu-list.active:nth-child(1) {
-    top: 6.1rem;
+    top: 6.05rem;
   }
   #menu-list.active a {
     font-size: 0.6rem;
