@@ -117,18 +117,46 @@
     padding-bottom: 0.1rem;
   }
 }
-
 @media (max-width: 414px) {
   #menu-list.active {
     gap: 1.3rem;
   }
   #menu-list.active:nth-child(1) {
-    top: 8rem;
+    top: 6.1rem;
   }
   #menu-list.active a {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
   #menu-list #button {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 393px) {
+  #menu-list.active {
+    gap: 1.3rem;
+  }
+  #menu-list.active:nth-child(1) {
+    top: 8.5rem;
+  }
+  #menu-list.active a {
+    font-size: 0.6rem;
+  }
+  #menu-list #button {
+    font-size: 0.6rem;
+  }
+}
+@media (max-width: 280px) {
+  #menu-list.active {
+    gap: 1rem;
+  }
+  #menu-list.active:nth-child(1) {
+    top: 8.1rem;
+  }
+  #menu-list.active a {
+    font-size: 0.6rem;
+  }
+  #menu-list #button {
+    font-size: 0.6rem;
   }
 }
