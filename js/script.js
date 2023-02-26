@@ -28,7 +28,7 @@ function initGalery() {
 
 initGalery();
 
-function menuMobile() {
+function initMenuMobile() {
   const btn = document.getElementById("btn");
   const menuList = document.querySelectorAll("#menu-list");
   const menu = document.querySelector(".menu");
@@ -63,9 +63,9 @@ function menuMobile() {
     home.addEventListener(eventos, activeMenu);
   });
 }
-menuMobile();
+initMenuMobile();
 
-function marcasBg() {
+function initMarcasBg() {
   const marcas = document.querySelectorAll(".marcas div ");
   const img = document.querySelectorAll(".marcas img");
   const h3 = document.querySelectorAll(".marcas h3");
@@ -117,4 +117,38 @@ function marcasBg() {
     });
   }
 }
-marcasBg();
+initMarcasBg();
+
+function initHeroesAtivo() {
+  const heroes = document.querySelectorAll(".heroes div");
+  const heroesBg = document.querySelectorAll(".heroes-bg *");
+
+  heroesBg.forEach((h) => {
+    if (h.id === "h-1") {
+      h.classList.add("ativo");
+    }
+  });
+  if (heroes) {
+    function ativoId(event) {
+      heroesBg.forEach((hBg) => {
+        if (hBg.classList.contains("ativo")) {
+          hBg.classList.remove("ativo");
+        }
+      });
+      event.currentTarget.classList.add("ativo");
+      const id = event.currentTarget.id;
+      heroesBg.forEach((filho) => {
+        if (filho.id === id) {
+          filho.classList.add("ativo");
+        }
+      });
+    }
+
+    heroes.forEach((div) => {
+      ["click"].forEach((eventos) => {
+        div.addEventListener(eventos, ativoId);
+      });
+    });
+  }
+}
+initHeroesAtivo();

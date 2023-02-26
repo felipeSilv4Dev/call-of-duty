@@ -86,7 +86,7 @@
     font-size: 0.7rem;
   }
   #menu-list.active:nth-child(1) {
-    top: 6.5rem;
+    top: 5.5rem;
     animation: show-list 0.7s both;
   }
   @keyframes show-list {
@@ -122,7 +122,7 @@
     gap: 1.3rem;
   }
   #menu-list.active:nth-child(1) {
-    top: 9rem;
+    top: 8.5rem;
   }
   #menu-list.active a {
     font-size: 0.8rem;
@@ -137,7 +137,7 @@
     top: 8.5rem;
   }
   #menu-list.active a {
-    font-size: 0.7rem;
+    font-size: 0.6.5rem;
   }
   #menu-list #button {
     font-size: 0.7rem;
@@ -148,7 +148,7 @@
     gap: 1rem;
   }
   #menu-list.active:nth-child(1) {
-    top: 8.1rem;
+    top: 8rem;
   }
   #menu-list.active a {
     font-size: 0.6rem;

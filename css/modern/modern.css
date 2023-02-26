@@ -109,6 +109,7 @@
 #bg-2 h3,
 #bg-3 h3,
 #bg-4 h3 {
+  text-transform: uppercase;
   color: #f5f5f5;
   margin-top: 1rem;
   font-size: 0.9rem;
@@ -153,15 +154,11 @@
   }
   .marcas {
     display: grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(2, 1fr);
   }
   .marcas div {
     width: 100%;
-    padding: 1.5rem 3rem;
-  }
-  #bg-1,
-  #bg-3 {
-    padding: 11px 12px 12px 12px;
+    padding: 1.5rem 1.9rem;
   }
 
   #bg-1 .img-preta.bg-ativo,
@@ -170,17 +167,18 @@
   #bg-4 .img-preta.bg-ativo {
     height: 2rem;
   }
-  #bg-1 .img-preta,
-  #bg-2 .img-preta,
-  #bg-3 .img-preta,
-  #bg-4 .img-preta {
-    height: 1rem;
+  #bg-1 .img-branca,
+  #bg-2 .img-branca,
+  #bg-3 .img-branca,
+  #bg-4 .img-branca {
+    height: 2rem;
   }
   #bg-1 h3,
   #bg-2 h3,
   #bg-3 h3,
   #bg-4 h3 {
-    font-size: 0.7rem;
+    margin-top: 0.7rem;
+    font-size: 0.5rem;
   }
 }
 @media (max-width: 414px) {
@@ -223,9 +221,7 @@
   .modern-marca h2 {
     font-size: 0.61rem;
   }
-  .marcas {
-    grid-template-columns: repeat(2, 1fr);
-  }
+
   .marcas div {
     padding: 10px 15px 10px 15px;
   }
