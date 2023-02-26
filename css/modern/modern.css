@@ -64,18 +64,51 @@
   align-items: center;
   padding: 31px 45px 32px 45px;
 }
-.marcas div:nth-child(2) {
+
+#bg-1 .img-preta,
+#bg-2 .img-preta,
+#bg-3 .img-preta,
+#bg-4 .img-preta {
+  display: none;
+}
+#bg-1 .img-preta.bg-ativo,
+#bg-2 .img-preta.bg-ativo,
+#bg-3 .img-preta.bg-ativo,
+#bg-4 .img-preta.bg-ativo {
+  display: flex;
+  height: 3rem;
+}
+#bg-1 .img-branca.bg-ativo,
+#bg-2 .img-branca.bg-ativo,
+#bg-3 .img-branca.bg-ativo,
+#bg-4 .img-branca.bg-ativo {
+  display: none;
+}
+#bg-1 .img-branca,
+#bg-2 .img-branca,
+#bg-3 .img-branca,
+#bg-4 .img-branca {
+  display: block;
+  height: 3rem;
+}
+#bg-1.bg-ativo,
+#bg-2.bg-ativo,
+#bg-3.bg-ativo,
+#bg-4.bg-ativo {
   border-radius: 1px;
   background-color: #f5f5f5;
   box-shadow: 0px 4px 70px rgba(255, 255, 255, 0.2);
 }
-.marcas div:nth-child(2) h3 {
+#bg-1.bg-ativo h3,
+#bg-2.bg-ativo h3,
+#bg-3.bg-ativo h3,
+#bg-4.bg-ativo h3 {
   color: #000;
 }
-.marcas div img {
-  height: 3rem;
-}
-.marcas div h3 {
+#bg-1 h3,
+#bg-2 h3,
+#bg-3 h3,
+#bg-4 h3 {
   color: #f5f5f5;
   margin-top: 1rem;
   font-size: 0.9rem;
@@ -126,14 +159,27 @@
     width: 100%;
     padding: 1.5rem 3rem;
   }
-  .marcas div:nth-child(1),
-  .marcas div:nth-child(3) {
+  #bg-1,
+  #bg-3 {
     padding: 11px 12px 12px 12px;
   }
-  .marcas div img {
+
+  #bg-1 .img-preta.bg-ativo,
+  #bg-2 .img-preta.bg-ativo,
+  #bg-3 .img-preta.bg-ativo,
+  #bg-4 .img-preta.bg-ativo {
     height: 2rem;
   }
-  .marcas div h3 {
+  #bg-1 .img-preta,
+  #bg-2 .img-preta,
+  #bg-3 .img-preta,
+  #bg-4 .img-preta {
+    height: 1rem;
+  }
+  #bg-1 h3,
+  #bg-2 h3,
+  #bg-3 h3,
+  #bg-4 h3 {
     font-size: 0.7rem;
   }
 }
@@ -183,10 +229,22 @@
   .marcas div {
     padding: 10px 15px 10px 15px;
   }
-  .marcas div img {
+  #bg-1 .img-branca,
+  #bg-2 .img-branca,
+  #bg-3 .img-branca,
+  #bg-4 .img-branca {
     height: 1.3rem;
   }
-  .marcas div h3 {
+  #bg-1 .img-preta.bg-ativo,
+  #bg-2 .img-preta.bg-ativo,
+  #bg-3 .img-preta.bg-ativo,
+  #bg-4 .img-preta.bg-ativo {
+    height: 1.3rem;
+  }
+  #bg-1 h3,
+  #bg-2 h3,
+  #bg-3 h3,
+  #bg-4 h3 {
     font-size: 0.5rem;
   }
 }

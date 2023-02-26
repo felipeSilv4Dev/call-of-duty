@@ -58,7 +58,63 @@ function menuMobile() {
       else btn.innerText = "︻╦̵̵͇╤─";
     }
   }
-  menu.addEventListener("click", activeMenu);
-  home.addEventListener("click", activeMenu);
+  ["click"].forEach((eventos) => {
+    menu.addEventListener(eventos, activeMenu);
+    home.addEventListener(eventos, activeMenu);
+  });
 }
 menuMobile();
+
+function marcasBg() {
+  const marcas = document.querySelectorAll(".marcas div ");
+  const img = document.querySelectorAll(".marcas img");
+  const h3 = document.querySelectorAll(".marcas h3");
+  const h3Id = document.querySelector(" #bg-2 h3");
+  const imgIdP = document.querySelector("#bg-2 .img-preta");
+  const imgIdB = document.querySelector("#bg-2 .img-branca");
+  const bgId = document.getElementById("bg-2");
+
+  h3Id.classList.add("bg-ativo");
+  imgIdP.classList.add("bg-ativo");
+  imgIdB.classList.add("bg-ativo");
+  bgId.classList.add("bg-ativo");
+  if (marcas) {
+    function bgAtivo(event) {
+      marcas.forEach((marca) => {
+        if (marca.classList.contains("bg-ativo")) {
+          marca.classList.remove("bg-ativo");
+        }
+      });
+      img.forEach((imagem) => {
+        if (imagem.classList.contains("bg-ativo")) {
+          imagem.classList.remove("bg-ativo");
+        }
+      });
+      h3.forEach((h) => {
+        if (h.classList.contains("bg-ativo")) {
+          h.classList.remove("bg-ativo");
+        }
+      });
+
+      event.currentTarget.classList.add("bg-ativo");
+      const id = event.currentTarget.id;
+      img.forEach((imagem) => {
+        if (imagem.id == id) {
+          imagem.classList.add("bg-ativo");
+        }
+      });
+      h3.forEach((h) => {
+        if (h.id == id) {
+          imagem.classList.add("bg-ativo");
+        }
+      });
+    }
+
+    ["click"].forEach((e) => {
+      marcas.forEach((marca) => {
+        marca.addEventListener(e, bgAtivo);
+      });
+    });
+  }
+}
+marcasBg();
