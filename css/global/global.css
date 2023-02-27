@@ -14,10 +14,20 @@ a {
 }
 body {
   font-family: "Modern Warfare", Arial, Helvetica, sans-serif;
+  background-color: #110c09;
 }
 h1,
 h2,
 h3,
 h4 {
   font-weight: 400;
+}
+.js-scroll {
+  opacity: 0;
+  transform: translate3d(-200px, 0, 0);
+  transition: 0.8s;
+}
+.js-scroll.animar {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
 }

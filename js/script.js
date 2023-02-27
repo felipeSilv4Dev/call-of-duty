@@ -152,3 +152,26 @@ function initHeroesAtivo() {
   }
 }
 initHeroesAtivo();
+
+function initAnimaScroll() {
+  const scroll = document.querySelectorAll(".js-scroll");
+  const windowMetade = innerHeight * 0.7;
+  if (scroll) {
+    function animaScroll() {
+      scroll.forEach((scrolls) => {
+        const scrollsTop = scrolls.getBoundingClientRect().top;
+        const isScrolls = scrollsTop - windowMetade < 0;
+        if (isScrolls) {
+          scrolls.classList.add("animar");
+        } else {
+          scrolls.classList.remove("animar");
+        }
+      });
+    }
+
+    animaScroll();
+
+    window.addEventListener("scroll", animaScroll);
+  }
+}
+initAnimaScroll();
