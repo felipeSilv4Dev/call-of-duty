@@ -38,8 +38,6 @@ function initMenuMobile() {
 
   if (btn) {
     function activeMenu(event) {
-      console.log(event.target.id);
-      console.log(event.target);
       if (event.target.id === "menu" || event.target.id === "home") {
         menuList.forEach((i) => {
           if (i.classList.contains("active")) {
@@ -163,8 +161,6 @@ function initAnimaScroll() {
         const isScrolls = scrollsTop - windowMetade < 0;
         if (isScrolls) {
           scrolls.classList.add("animar");
-        } else {
-          scrolls.classList.remove("animar");
         }
       });
     }
