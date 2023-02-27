@@ -4,11 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+
+    <link rel="preload" href="./css/style.css" as="style" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Call Of Duty</title>
+    <meta
+      name="description"
+      content=" Call of Duty®: Modern Warfare® II drops players into an
+		unprecedented global conflict that features the return of the
+		iconic operators of Task Force 141."
+    />
   </head>
   <body>
-    <header class="menu" id="menu">
+    <header class="menu">
       <div class="menu-header">
         <img
           id="menu"
@@ -34,7 +48,13 @@
           <li><a id="button" href="#">pre‑order</a></li>
         </ul>
 
-        <div><button id="btn"></button></div>
+        <div>
+          <button
+            id="btn"
+            aria-expanded="false"
+            aria-controls="menu-list"
+          ></button>
+        </div>
       </div>
     </header>
 
