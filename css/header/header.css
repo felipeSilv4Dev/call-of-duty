@@ -4,6 +4,7 @@
   justify-content: space-between;
   padding: 0.9rem 1.2rem;
   align-items: center;
+  position: relative;
 }
 .menu-list {
   display: flex;
@@ -84,16 +85,16 @@
     transition: 0.6s;
   }
   #menu-list.active {
+    position: absolute;
+    z-index: 2;
     display: grid;
     grid-template-columns: auto;
     background-color: rgb(0, 0, 0, 0.9);
     border: 2px solid #111;
     gap: 1.1rem;
-    position: absolute;
     top: 2.9rem;
     right: 0;
     width: 30%;
-    z-index: 6;
     animation: show-list 0.7s both;
     transition: 0.6s;
   }
@@ -102,7 +103,7 @@
   }
   #menu-list.active:nth-child(1) {
     background-color: rgba(0, 0, 0, 0.8);
-    z-index: 4;
+    z-index: 1;
     width: 100%;
     left: 0;
     height: 20rem;
