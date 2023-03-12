@@ -13,6 +13,8 @@ a {
   text-decoration: none;
 }
 body {
+  max-width: 1400px;
+  margin: 0 auto;
   font-family: "Modern Warfare", Arial, Helvetica, sans-serif;
   background-color: #110c09;
 }

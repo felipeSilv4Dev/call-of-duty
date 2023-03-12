@@ -153,7 +153,7 @@ initHeroesAtivo();
 
 function initAnimaScroll() {
   const scroll = document.querySelectorAll(".js-scroll");
-  const windowMetade = innerHeight * 0.7;
+  const windowMetade = innerHeight * 0.75;
   if (scroll) {
     function animaScroll() {
       scroll.forEach((scrolls) => {
