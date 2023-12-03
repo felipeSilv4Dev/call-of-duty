@@ -3,6 +3,44 @@
   padding: 0px;
   box-sizing: border-box;
 }
+
+body {
+  font-family: "Modern Warfare", Arial, Helvetica, sans-serif;
+  background-color: #110c09;
+  color: #fff;
+}
+
+.content {
+  max-width: 140rem;
+  margin: 0 auto;
+}
+html {
+  font-size: 41.7%;
+}
+
+@media (max-width: 75em) {
+  html {
+    font-size: 37%;
+  }
+}
+
+@media (min-width: 112.5em) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+@media (max-width: 67.5em) {
+  html {
+    font-size: 35%;
+  }
+}
+
+@media (max-width: 57em) {
+  html {
+    font-size: 29%;
+  }
+}
 img {
   max-width: 100%;
 }
@@ -11,12 +49,7 @@ li {
 }
 a {
   text-decoration: none;
-}
-body {
-  max-width: 1400px;
-  margin: 0 auto;
-  font-family: "Modern Warfare", Arial, Helvetica, sans-serif;
-  background-color: #110c09;
+  color: inherit;
 }
 h1,
 h2,
@@ -24,6 +57,7 @@ h3,
 h4 {
   font-weight: 400;
 }
+
 .js-scroll {
   opacity: 0;
   transform: translate3d(-200px, 0, 0);
