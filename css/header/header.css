@@ -133,6 +133,7 @@
   }
   .menu__primary li {
     padding: 1.5rem;
+    font-size: 1.8rem;
   }
 
   .menu__primary li {
@@ -147,6 +148,7 @@
   }
   .menu__secondary li {
     padding: 1rem;
+    font-size: 1.8rem;
   }
   .menu__secondary li:nth-child(1),
   .menu__secondary li:nth-child(2) {
