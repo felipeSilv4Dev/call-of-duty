@@ -1,3 +1,7 @@
+import menuMobile from "./menuMobile/menuMobile.js";
+
+menuMobile();
+
 // function initGalery() {
 //   const imgP = document.getElementById("img-p");
 //   const galery = document.querySelectorAll(".galery-p img");

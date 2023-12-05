@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <!-- 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" /> -->
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
     <link
       rel="stylesheet"
@@ -20,6 +18,8 @@
 
     <!-- <link rel="preload" href="./css/style.min.css" as="style" /> -->
     <link rel="stylesheet" href="./css/style.css" />
+    <script defer type="module" src="./js/script.js"></script>
+
     <title>Call of Duty</title>
     <meta
       name="description"
@@ -56,16 +56,47 @@
             <li><a href="#lo"> sing up</a></li>
             <li><a href="#ca">my call of duty</a></li>
             <li>
-              <a class="btn" href="#btn">Pre<span class="dash"></span>>order</a>
+              <a class="btn" href="#btn">Pre order</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
 
+    <div class="overlay">
+      <div class="menu__mobile">
+        <nav>
+          <ul class="mobile__links">
+            <li>
+              <a href="#games">Games <i class="fa-solid fa-angle-down"></i></a>
+            </li>
+            <li><a href="#ne">News</a></li>
+            <li>
+              <a href="#es">Esports <i class="fa-solid fa-angle-down"></i></a>
+            </li>
+            <li><a href="#su">Support</a></li>
+            <li>
+              <a href="#sh">shop <i class="fa-solid fa-angle-down"></i></a>
+            </li>
+          </ul>
+        </nav>
+
+        <nav>
+          <ul class="mobile__login">
+            <li><a href="#login">login</a></li>
+            <li><a href="#lo"> sing up</a></li>
+            <li><a href="#ca">my call of duty</a></li>
+            <li class="btn__mobile">
+              <a href="#btn">Pre order</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
     <div class="content">
       <section class="home-bg">
-        <div class="home js-scroll" id="home">
+        <div class="home" id="home">
           <h1 id="home">
             WELCOME TO THE NEW <br />
             ERA OF CALL OF DUTY®
@@ -91,7 +122,7 @@
       <section class="features">
         <img class="cortex-1" src="./img/especificaoes/cortex.png" alt="" />
         <div class="features-bg">
-          <div class="features-conteudo js-scroll">
+          <div class="features-conteudo">
             <img src="./img/especificaoes/img-1-es.png" alt="imagem-1" />
             <div class="features-conteudo-info-1">
               <h2>MODERN WARFARE II</h2>
@@ -108,7 +139,7 @@
             />
           </div>
 
-          <div class="features-conteudo js-scroll">
+          <div class="features-conteudo">
             <div class="features-conteudo-info-2">
               <h2>FEATURES</h2>
               <p>
@@ -129,7 +160,7 @@
             </div>
           </div>
 
-          <div class="features-conteudo js-scroll">
+          <div class="features-conteudo">
             <img src="./img/especificaoes/img-4-es.png" alt="imagem-4" />
             <div class="features-conteudo-info-4">
               <h2>Call of Duty®: Warzone 2.0</h2>
@@ -148,7 +179,7 @@
         </div>
       </section>
 
-      <section class="banner-camp js-scroll">
+      <!-- <section class="banner-camp">
         <div class="camp-info">
           <h2>
             A NEW IMMERSIVE <br />
@@ -163,12 +194,12 @@
             Task Force 141 the legendary squad it is today.
           </p>
         </div>
-      </section>
+      </section> -->
       <section>
-        <div class="heroes-bg js-scroll">
+        <div class="heroes-bg">
           <h2>WELCOME TO TASK FORCE 141</h2>
 
-          <div class="heroes js-scroll">
+          <div class="heroes">
             <div id="h-1">
               <img
                 id="h-1"
@@ -275,7 +306,7 @@
                 alt="Rosto de um Homem"
               />
             </div>
-            <div class="js-scroll">
+            <div class="">
               <h2 id="h-1" class="dt-titulo">
                 SGT. JOHN <br />
                 “SOAP” <br />
@@ -365,7 +396,7 @@
         </div>
       </section>
 
-      <section class="gun-bg js-scroll">
+      <section class="gun-bg">
         <img class="cortex-1" src="./img/especificaoes/cortex.png" alt="" />
         <div class="gun">
           <h2>GUNSMITH</h2>
@@ -386,7 +417,7 @@
           </div>
         </div>
       </section>
-      <section class="banner-2-bg js-scroll">
+      <section class="banner-2-bg">
         <div class="banner">
           <h2>PLAY THE CAMPAIGN NOW</h2>
           <h2 class="b-h-2">AND GET READY FOR LAUNCH</h2>
@@ -410,8 +441,8 @@
         </div>
       </section>
 
-      <section class="galery js-scroll">
-        <div class="galery-header js-scroll">
+      <section class="galery">
+        <div class="galery-header">
           <h2>Gallery</h2>
           <div class="galery-button">
             <a href="#videos">Videos</a>
@@ -421,7 +452,7 @@
         </div>
 
         <div class="galery-img">
-          <div class="galery-p js-scroll">
+          <div class="galery-p">
             <img id="img-p" src="./img/galeria/img-1-g.png" alt="imagem 1" />
           </div>
 
@@ -438,7 +469,7 @@
           <img class="cortex-3" src="./img/galeria/cortex-3.jpg" alt="" />
         </div>
 
-        <div class="feature-2 js-scroll">
+        <div class="feature-2">
           <h2>
             MODERN WARFARE II WILL FEATURE <br />
             A MASSIVE AMOUNT OF CONTENT FROM DAY ONE
@@ -454,7 +485,7 @@
             </div>
           </div>
 
-          <div class="feature-2-conteudo js-scroll">
+          <div class="feature-2-conteudo">
             <div class="feature-2-info-2">
               <h2>multiplayer</h2>
               <p>
@@ -465,7 +496,7 @@
             <img src="./img/galeria/gun-2.png" alt="" />
           </div>
 
-          <div class="feature-2-conteudo js-scroll">
+          <div class="feature-2-conteudo">
             <img src="./img/galeria/gun-3.png" alt="" />
             <div class="feature-2-info-3">
               <h2>SPECial OPS</h2>
@@ -476,7 +507,7 @@
             </div>
           </div>
 
-          <div class="feature-2-conteudo js-scroll">
+          <div class="feature-2-conteudo">
             <div class="feature-2-info-4">
               <h2>Events</h2>
               <p>
@@ -491,17 +522,17 @@
       </section>
 
       <section class="modern-bg">
-        <div class="modern-header js-scroll">
+        <div class="modern-header">
           <h2>MODERN WARFARE II VAULT EDITION CONTENT</h2>
 
           <a id="button" href="#pre-order">Pre-order</a>
         </div>
-        <div class="modern-img js-scroll">
+        <div class="modern-img">
           <img src="./img/galeria/red-team.png" alt="red-team" />
           <img src="./img/galeria/pre-ordem.png" alt="Pre-ordem" />
         </div>
 
-        <div class="modern-marca js-scroll">
+        <div class="modern-marca">
           <h2>CHOOSE YOUR PLATFORM</h2>
           <div class="marcas">
             <div id="bg-1">
@@ -570,9 +601,9 @@
           </div>
         </div>
       </section>
-      <section class="banner-3 js-scroll"></section>
+      <section class="banner-3"></section>
 
-      <section class="footer js-scroll">
+      <section class="footer">
         <div>
           <ul class="footer-list">
             <li><p>LEGAL</p></li>
@@ -584,7 +615,7 @@
             <li><p>OF CONDUCT</p></li>
           </ul>
         </div>
-        <div class="footer-img js-scroll">
+        <div class="footer-img">
           <div class="img-es">
             <img src="./img/footer/img-1-fo.png" alt="" />
             <img src="./img/footer/img-2-fo.png" alt="" />
@@ -621,7 +652,5 @@
         </div>
       </section>
     </div>
-
-    <script src="./js/script.js"></script>
   </body>
 </html>

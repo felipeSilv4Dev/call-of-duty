@@ -57,7 +57,20 @@ h3,
 h4 {
   font-weight: 400;
 }
+/* classes */
+.btn {
+  padding: 1.2rem 2.6rem;
+  background-color: #7bc42d;
+  border: 0.3rem solid #7bc42d;
+  border-radius: 2px;
+  color: #110c09;
+  transition: all 0.1s;
+}
 
+.btn:hover {
+  border-color: #fff;
+  background-color: transparent;
+}
 .js-scroll {
   opacity: 0;
   transform: translate3d(-200px, 0, 0);
