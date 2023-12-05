@@ -6,41 +6,39 @@
 
 body {
   font-family: "Modern Warfare", Arial, Helvetica, sans-serif;
-  background-color: #110c09;
-  color: #fff;
+  background-color: var(--color--primary);
+  color: var(--color--light);
 }
 
 .content {
   max-width: 140rem;
   margin: 0 auto;
 }
+
 html {
-  font-size: 41.7%;
+  font-size: 62.5%;
 }
 
-@media (max-width: 75em) {
-  html {
-    font-size: 37%;
-  }
-}
-
+/* 1800 */
 @media (min-width: 112.5em) {
   html {
-    font-size: 62.5%;
+    font-size: 75%;
+  }
+}
+/* 1200 */
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+/* 1000 */
+
+@media (max-width: 64em) {
+  html {
+    font-size: 50%;
   }
 }
 
-@media (max-width: 67.5em) {
-  html {
-    font-size: 35%;
-  }
-}
-
-@media (max-width: 57em) {
-  html {
-    font-size: 29%;
-  }
-}
 img {
   max-width: 100%;
 }
@@ -58,18 +56,26 @@ h4 {
   font-weight: 400;
 }
 /* classes */
-.btn {
-  padding: 1.2rem 2.6rem;
-  background-color: #7bc42d;
-  border: 0.3rem solid #7bc42d;
+#btn {
+  padding: 1.4rem 2.6rem;
+  background-color: var(--color--secondary);
+  border: 0.3rem solid var(--color--secondary);
   border-radius: 2px;
-  color: #110c09;
+  color: var(--color--primary);
+  font-size: 1.3rem;
   transition: all 0.1s;
 }
 
-.btn:hover {
-  border-color: #fff;
+#btn:hover {
   background-color: transparent;
+  color: var(--color--light);
+  border-color: var(--color--light);
+}
+
+@media (max-width: 57em) {
+  #btn {
+    padding: 1rem 2.2rem;
+  }
 }
 .js-scroll {
   opacity: 0;

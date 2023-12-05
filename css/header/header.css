@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.9rem 3rem;
+  padding: 1.9rem 2rem;
   position: relative;
 }
 
@@ -10,112 +10,152 @@
   height: 3.3rem;
   width: 19.8rem;
 }
-.header__links {
+
+.header__logo {
   display: flex;
   align-items: center;
-  gap: 1.8rem;
+  gap: 1rem;
 }
 
-.header__links a {
-  color: #6c6967;
-  font-size: 1.8rem;
+.header__primary,
+.header__secondary {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.header__primary a,
+.header__secondary a {
+  padding: 1rem 0.5rem;
+  font-size: 1.2rem;
+  color: var(--color--primary-light);
   transition: all 0.1s;
 }
-.header__links .fa-solid {
-  font-size: 1.4rem;
-  font-weight: 800;
+.header__primary a:hover,
+.header__secondary a:hover {
+  color: var(--color--light);
 }
-
-.header__links-login li:first-child {
-  position: relative;
+.header__secondary li:first-child {
+  padding-right: 0.5rem;
+  border-right: 2px solid var(--color--primary-light);
 }
-.header__links-login li:first-child::after {
+.header__secondary li:nth-child(3n) a::before {
   content: "";
-  position: absolute;
-  display: block;
-  height: 60%;
-  width: 2px;
-  top: 0.4rem;
-  right: -1rem;
-  background-color: #6c6967;
-  transition: all 0.1s;
-}
-
-.header__links-login li:nth-child(3) a::before {
-  content: "";
-  display: inline-block;
-  position: relative;
-  margin-right: 0.8rem;
-  height: 2rem;
-  width: 2rem;
-  bottom: -0.2rem;
   background: url("../../img/icon_header.svg") no-repeat center center;
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.4rem;
   background-size: cover;
   opacity: 0.5;
-  transform: all 0.1s;
+  transition: all 0.1s;
 }
 
-.header__links a:hover {
-  color: #f5f5f5;
-}
-.header__links-login li:nth-child(3) a:hover::before {
+.header__secondary li:nth-child(3n):hover a::before {
   opacity: 1;
+}
+.mobile__button {
+  display: none;
+  border: none;
+  background-color: transparent;
+  padding: 1.5rem 1rem;
+}
+.overlay {
+  display: none;
+}
+
+@media (max-width: 57em) {
+  .header {
+    padding: 1.6rem 1.5rem;
+  }
+  .logo {
+    height: 3.3rem;
+    width: 13.8rem;
+  }
+  .header__primary a,
+  .header__secondary a {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 51.25em) {
-  .header__links-nav,
-  .header__links-login {
+  .header__primary,
+  .header__secondary {
     display: none;
   }
-  .overlay {
+  .mobile__button {
+    display: block;
+  }
+  .mobile__button::after {
+    content: "";
+    display: block;
+    width: 3rem;
+    height: 0.2rem;
+    background-color: var(--color--secondary);
+    box-shadow: 0 0.8rem 0 var(--color--secondary),
+      0 -0.8rem 0 var(--color--secondary);
+    transition: all 0.3s;
+  }
+
+  .mobile__button.active::after {
+    transform: rotate(90deg);
+  }
+  .overlay.active {
+    display: block;
     position: absolute;
-    z-index: 98;
+    z-index: 96;
     height: 100vh;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.4);
+    animation: animeLeft 0.3s forwards;
   }
 
+  @keyframes animeLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(100rem);
+    }
+    100% {
+      opacity: initial;
+      transform: initial;
+    }
+  }
   .menu__mobile {
     position: absolute;
-    z-index: 99;
+    z-index: 100;
+    background-color: var(--color--primary);
     right: 0;
-    top: -0.1rem;
-    height: auto;
-    width: auto;
-    background-color: #110c09;
+    width: 90%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90vh;
+  }
+  .menu__primary li {
+    padding: 1.5rem;
   }
 
-  .mobile__links li {
-    display: block;
-    padding: 1.2rem 1.1rem;
-    margin-bottom: 1rem;
-  }
-  .mobile__links li:not(:last-child) {
-    border-bottom: 1px solid #1f1f1f;
+  .menu__primary li {
+    border-bottom: 1px solid var(--color--primary-border);
   }
 
-  .mobile__login {
+  .menu__secondary {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid var(--color--primary-border);
     text-align: center;
-    border-top: 1px solid #1f1f1f;
   }
-
-  .mobile__login li {
+  .menu__secondary li {
     padding: 1rem;
   }
-  .mobile__login li:not(:last-child) {
-    border-right: 1px solid #1f1f1f;
+  .menu__secondary li:nth-child(1),
+  .menu__secondary li:nth-child(2) {
+    border-right: 1px solid var(--color--primary-border);
   }
-
   .btn__mobile {
+    background-color: var(--color--secondary);
     grid-column: 1/-1;
-    background-color: #7bc42d;
+    border-radius: 2px;
     padding: 1rem 0;
-    transition: all 0.2s;
-  }
-
-  .btn__mobile:active {
-    background-color: #66a523;
   }
 }
