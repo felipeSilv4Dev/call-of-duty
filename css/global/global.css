@@ -25,14 +25,15 @@ html {
     font-size: 75%;
   }
 }
-/* 1200 */
-@media (max-width: 75em) {
+
+/* 1280 */
+@media (max-width: 80em) {
   html {
     font-size: 56.25%;
   }
 }
-/* 1000 */
 
+/* 1024 */
 @media (max-width: 64em) {
   html {
     font-size: 50%;
@@ -45,6 +46,7 @@ img {
 li {
   list-style: none;
 }
+a,
 a {
   text-decoration: none;
   color: inherit;
@@ -54,35 +56,4 @@ h2,
 h3,
 h4 {
   font-weight: 400;
-}
-/* classes */
-#btn {
-  padding: 1.4rem 2.6rem;
-  background-color: var(--color--secondary);
-  border: 0.3rem solid var(--color--secondary);
-  border-radius: 2px;
-  color: var(--color--primary);
-  font-size: 1.3rem;
-  transition: all 0.1s;
-}
-
-#btn:hover {
-  background-color: transparent;
-  color: var(--color--light);
-  border-color: var(--color--light);
-}
-
-@media (max-width: 57em) {
-  #btn {
-    padding: 1rem 2.2rem;
-  }
-}
-.js-scroll {
-  opacity: 0;
-  transform: translate3d(-200px, 0, 0);
-  transition: 0.8s;
-}
-.js-scroll.animar {
-  opacity: 1;
-  transform: translate3d(0, 0, 0);
 }

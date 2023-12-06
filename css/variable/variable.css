@@ -6,3 +6,30 @@
   --color--secondary-dark: #609725;
   --color--light: #fff;
 }
+
+/* classes */
+.btn {
+  padding: 1.5rem 2.6rem;
+  background-color: var(--color--secondary);
+  border: 0.3rem solid var(--color--secondary);
+  border-radius: 2px;
+  color: var(--color--primary);
+  font-size: 1.3rem;
+  transition: all 0.1s;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: var(--color--light);
+  border-color: var(--color--light);
+}
+
+.js-scroll {
+  opacity: 0;
+  transform: translate3d(-200px, 0, 0);
+  transition: 0.8s;
+}
+.js-scroll.animar {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
