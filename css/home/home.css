@@ -1,158 +1,260 @@
-.home-bg {
-  background: url("../../img/principal/principal.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
-}
-
 .home {
-  padding-top: 26.5rem;
+  height: 110vh;
+  background: url("../../img/main/main-1.png") no-repeat center center;
+  background-position-y: -8rem;
+  background-size: cover;
+  position: relative;
+}
+
+.home__content {
+  height: 100vh;
   display: flex;
-  place-items: center;
   flex-direction: column;
+  align-items: center;
+  place-content: center end;
+  gap: 3.2rem;
+  position: absolute;
+  top: 0.4rem;
+  left: 9.6%;
 }
 
-.home h1 {
-  color: #f5f5f5;
-  font-size: 3.91rem;
+.home__title {
+  position: relative;
   line-height: 1;
-  padding-left: 1rem;
-}
-.home-p {
-  margin-top: 1.6rem;
-}
-.home-p p {
-  font-family: "TT Firs Neue Trl", Arial, Helvetica, sans-serif;
-  font-weight: 700;
-  color: #f5f5f5;
-  font-size: 1.2rem;
-  line-height: 1.2;
-}
-.home-p p:nth-child(2) {
-  padding-left: 3.9rem;
-}
-.home-button {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  margin: 2rem 0rem 2rem 0rem;
-}
-.home-button a {
-  background-color: #7bc42d;
-  color: #110c09;
-  border-radius: 2px;
-  font-size: 0.8rem;
-  padding: 1rem 1.5rem;
-  text-transform: uppercase;
-}
-.home-button a:hover {
-  transition: 0.3s;
-  background-color: #599b13;
-  color: #f5f5f5;
-}
-.home-button a:nth-child(2) {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  background-color: transparent;
-  color: #ccc;
-  border: 2px solid #ccc;
-  font-size: 0.7rem;
-  padding: 0.9rem 1.5rem;
-}
-.home-button a:nth-child(2):hover {
-  transition: 0.3s;
-  color: #fff;
-  border: 2px solid #fff;
-}
-.home-button a:nth-child(2) img {
-  height: 1.2rem;
+  font-size: 7.9rem;
+  max-width: 140rem;
+  margin: 0 auto;
+  right: -5rem;
 }
 
-@media (max-width: 1024px) {
-  .home {
-    padding-top: 19rem;
+[class*="plus-"] {
+  position: absolute;
+  font-size: 1.3rem;
+}
+
+.plus-1 {
+  top: -1rem;
+  left: 0;
+}
+.plus-2 {
+  left: 0;
+  bottom: -1rem;
+}
+.plus-3 {
+  right: 13.5rem;
+  bottom: -1rem;
+}
+.plus-4 {
+  top: -9.5rem;
+  right: -1rem;
+}
+
+.register {
+  position: absolute;
+  top: 60%;
+  right: 10%;
+  font-size: 4rem;
+}
+
+.home__paragraph {
+  font-family: "TT Firs Neue trl", monospace, sans-serif;
+  font-size: 2.6rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.home__paragraph span {
+  display: block;
+}
+
+.home__buttons a:not(:last-child) {
+  margin-right: 3.2rem;
+}
+
+.play {
+  position: relative;
+  top: 0.4rem;
+  bottom: 0;
+  font-size: 2.6rem;
+  font-weight: 500;
+  margin-right: 0.5rem;
+}
+
+@media (min-width: 112.5em) {
+  .home__content {
+    top: -6.7rem;
+    left: 9.8%;
   }
-  .home h1 {
+
+  .home__title {
+    font-size: 9.3rem;
+    max-width: 160rem;
+    right: -5.2rem;
+  }
+  .register {
+    right: 8%;
+  }
+
+  .plus-3 {
+    right: 10rem;
+    bottom: -1rem;
+  }
+  .plus-4 {
+    top: -11rem;
+    right: -3rem;
+  }
+}
+
+@media only screen and (max-width: 80em) {
+  .home {
+    height: 90vh;
+  }
+  .home__content {
+    top: -27%;
+    left: 8%;
+    gap: 3rem;
+  }
+
+  .home__title {
+    font-size: 6.75rem;
+    max-width: 120rem;
+    right: -5.2rem;
+  }
+  .register {
+    right: 10%;
+  }
+  .plus-3 {
+    right: 10rem;
+    bottom: -1rem;
+  }
+  .plus-4 {
+    top: -8rem;
+    right: -2rem;
+  }
+  .home__paragraph {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 64em) {
+  .home {
+    height: 102vh;
+  }
+  .home__content {
+    max-width: 110rem;
+    gap: 2.5rem;
+    top: -14.5%;
+    left: 5%;
+  }
+  .home__title {
+    font-size: 6.45rem;
+  }
+  .register {
+    right: 5.5%;
+  }
+  .plus-1 {
+    top: -0.7rem;
+  }
+  .plus-3 {
+    right: 5rem;
+    bottom: -1rem;
+  }
+  .plus-4 {
+    top: -8rem;
+    right: -1rem;
+  }
+
+  .btn__home {
+    padding: 1rem 1.5rem;
+  }
+}
+
+/* mobile */
+@media only screen and (max-width: 57em) {
+  .home {
+    height: 120vh;
+    background-position-x: -2.5rem;
+    padding: 0 2rem;
+  }
+
+  .home__content {
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 3.2rem;
+    top: 25%;
+    left: 0;
+    max-width: 100rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .home__title {
+    position: initial;
+    max-width: initial;
+    line-height: 1;
+    font-size: 5.9rem;
+    text-align: start;
+    right: 0;
+  }
+  .register {
+    position: initial;
+  }
+  .plus-1,
+  .plus-3,
+  .plus-2,
+  .plus-4 {
+    display: none;
+  }
+
+  .home__paragraph {
     font-size: 2.4rem;
   }
-  .home-p p {
-    font-size: 1rem;
+
+  .btn__home {
+    padding: 2rem 2.5rem;
   }
 }
 
-@media (max-width: 540px) {
-  .home-bg {
-    height: 20rem;
+@media only screen and (max-width: 48em) {
+  .home__title {
+    text-align: center;
+    font-size: 5.4rem;
   }
+}
+@media only screen and (max-width: 33.75em) {
   .home {
-    padding-top: 8rem;
+    background-position-x: 0rem;
   }
-  .home h1 {
-    padding-left: 0rem;
+  .home__title {
+    font-size: 2.5rem;
+  }
+  .register {
     font-size: 1.5rem;
   }
-  .home-p {
-    margin-top: 1rem;
+  .home__paragraph {
+    font-size: 1.8rem;
   }
-  .home-p p {
-    font-size: 0.9rem;
-  }
-  .home-p p:nth-child(2) {
-    padding-left: 2rem;
-  }
-  .home-button {
-    gap: 1rem;
-    margin: 1rem 0rem 1rem 0rem;
-  }
-  .home-button a {
-    padding: 0.8rem 1.9rem;
-  }
-  .home-button a:nth-child(2) {
-    padding: 0.7rem 0.9rem;
-  }
-  .home-button a:nth-child(2) img {
-    height: 1rem;
+
+  .btn__home {
+    padding: 1rem 1rem;
   }
 }
-@media (max-width: 414px) {
-  .home-bg {
-    height: 100%;
+@media only screen and (max-width: 22.5em) {
+  .home__buttons {
+    display: grid;
+    gap: 1.1rem;
+    width: 100%;
   }
-  .home {
-    padding-top: 19rem;
+  .home__title {
+    font-size: 2.4rem;
   }
-  .home h1 {
-    font-size: 1.4rem;
+  .home__paragraph {
+    font-size: 1.8rem;
   }
-  .home p {
-    font-size: 0.6rem;
-  }
-}
-@media (max-width: 360px) {
-  .home h1 {
-    font-size: 1.3rem;
-  }
-  .home-button a {
-    padding: 0.8rem 1.2rem;
-  }
-}
-@media (max-width: 280px) {
-  .home {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-  }
-  .home h1 {
-    font-size: 1rem;
-  }
-  .home-p p {
-    font-size: 0.5rem;
-  }
-  .home-button a {
-    padding: 0.6rem 0.9rem;
-  }
-  .home-button a:nth-child(2) {
-    font-size: 0.6rem;
-    padding: 0.6rem 0.9rem;
+  .home__buttons a:not(:last-child) {
+    margin: 0;
   }
 }

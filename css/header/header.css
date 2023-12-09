@@ -4,6 +4,7 @@
   justify-content: space-between;
   padding: 1.9rem 2rem;
   position: relative;
+  z-index: 10;
 }
 
 .logo {
@@ -26,7 +27,7 @@
 .header__primary a,
 .header__secondary li:not(:last-child) a {
   padding: 1rem 0.5rem;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   color: var(--color--primary-light);
   transition: all 0.1s;
 }
@@ -34,16 +35,24 @@
 .header__secondary li a:hover {
   color: var(--color--light);
 }
+.arrow {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
 .header__secondary li:first-child {
   padding-right: 0.5rem;
-  border-right: 2px solid var(--color--primary-light);
+  border-right: 0.3em solid var(--color--primary-light);
+}
+
+.btn__header {
+  font-size: 1.5rem;
 }
 .header__secondary li:nth-child(3n) a::before {
   content: "";
   background: url("../../img/icon_header.svg") no-repeat center center;
   display: inline-block;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.8rem;
+  height: 1.8rem;
   margin-right: 0.4rem;
   background-size: cover;
   opacity: 0.5;
@@ -62,7 +71,12 @@
 .overlay {
   display: none;
 }
-
+@media only screen and (max-width: 80em) {
+  .header__primary a,
+  .header__secondary li:not(:last-child) a {
+    font-size: 1.4rem;
+  }
+}
 @media only screen and (max-width: 64em) {
   .header {
     padding: 1.9rem 1.5rem;

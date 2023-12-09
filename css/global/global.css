@@ -10,10 +10,10 @@ body {
   color: var(--color--light);
 }
 
-.content {
-  max-width: 140rem;
+/* .content {
+  max-width: 10rem;
   margin: 0 auto;
-}
+} */
 
 html {
   font-size: 62.5%;
@@ -45,6 +45,8 @@ img {
 }
 li {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 a,
 a {
