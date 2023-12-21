@@ -18,12 +18,38 @@
 .home__title {
   font-size: 4.64vw;
   max-width: 38ch;
+  position: relative;
+}
+
+.plus-1,
+.plus-2,
+.plus-3,
+.plus-4 {
+  position: absolute;
+  font-size: 1vw;
+  font-weight: 500;
+}
+.plus-1 {
+  top: -0.3rem;
+  left: 2.5%;
+}
+.plus-2 {
+  left: 2.5%;
+  bottom: -0.8rem;
+}
+.plus-3 {
+  top: 0.3%;
+  right: 2.1%;
+}
+.plus-4 {
+  bottom: 0;
+  right: 2.1%;
 }
 .register {
   position: relative;
-  font-size: 3vw;
-  top: -1.2rem;
-  right: -1rem;
+  font-size: 2.3vw;
+  top: -1.5rem;
+  right: -0.3rem;
 }
 
 .home__paragraph {
@@ -49,7 +75,16 @@
   font-size: 1.3vw;
   position: relative;
 }
-
+.arrow {
+  font-size: 0.8vw;
+  color: var(--color--primary-light);
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s;
+}
+.arrow:hover {
+  color: var(--color--light);
+}
 /* 1800 */
 @media only screen and (min-width: 112.5em) {
   .home__title {
@@ -88,60 +123,72 @@
 @media only screen and (max-width: 33.75em) {
   .home__content {
     margin: 0;
-    top: 40%;
-    right: 5.5%;
-    gap: 1rem;
+    top: 72%;
+    right: 4.2%;
+    gap: 1.5rem;
   }
   .home__title {
-    font-size: 2.6rem;
+    font-size: 2.9rem;
   }
+  .plus-1,
+  .plus-2,
+  .plus-3,
+  .plus-4 {
+    display: none;
+  }
+
   .register {
     top: -0.5vw;
     right: -0.5vw;
   }
 
   .home__paragraph {
-    font-size: 2.3vw;
+    font-size: 2.8vw;
   }
 
   .btn__home {
-    font-size: 1.7vw;
-    padding: 1vw 1.5vw;
+    font-size: 3vw;
+    padding: 1.5vw 2vw;
   }
   .btn__home .play {
-    font-size: 2.6vw;
+    font-size: 3.5vw;
+  }
+  .arrow {
+    color: var(--color--light-2);
+    font-size: 3vw;
   }
 }
 
 /* 360 */
 @media only screen and (max-width: 24.5em) {
-  .home__content {
-    top: 40%;
-    right: 8%;
-  }
-
   .home__title {
-    font-size: 2.1rem;
-  }
-
-  .home__paragraph {
-    font-size: 2.3vw;
+    font-size: 2.7rem;
   }
 }
 
 /* 280 */
 @media only screen and (max-width: 17.5em) {
   .home__content {
-    top: 40%;
-    right: 4.8%;
-    gap: 0.5rem;
+    top: 68%;
   }
-
   .home__title {
-    font-size: 1.9rem;
+    font-size: 2rem;
   }
 
   .home__paragraph {
-    font-size: 2.2vw;
+    font-size: 3.6vw;
+  }
+
+  .btn__home {
+    font-size: 3.2vw;
+    padding: 2vw 2.5vw;
+  }
+  .btn__home .play {
+    font-size: 4vw;
+  }
+
+  .arrow {
+    display: none;
+    padding: 0;
   }
 }

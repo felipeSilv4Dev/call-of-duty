@@ -112,10 +112,22 @@
     </div>
 
     <section class="home">
-      <img src="./img/main/bg-principal.png" alt="" />
+      <picture>
+        <source
+          media="(max-width: 33.75em)"
+          srcset="./img/main/bg-principal-mobile.png"
+        />
+        <img src="./img/main/bg-principal.png" alt="" />
+      </picture>
       <div class="home__content">
         <h1 class="home__title">
-          <!-- <i class="plus-1 fa-solid fa-plus"></i> -->
+          <span>
+            <i class="plus-1 fa-solid fa-plus"></i>
+            <i class="plus-2 fa-solid fa-plus"></i>
+            <i class="plus-3 fa-solid fa-plus"></i>
+            <i class="plus-4 fa-solid fa-plus"></i
+          ></span>
+
           <span> WELCOME TO THE NEW </span>
 
           <span>
@@ -135,6 +147,7 @@
             ><i class="play fa-regular fa-circle-play"></i> Watch trailer</a
           >
         </div>
+        <div><i class="arrow fa-solid fa-angles-down"></i></div>
       </div>
     </section>
 
