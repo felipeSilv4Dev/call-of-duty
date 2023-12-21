@@ -10,11 +10,6 @@ body {
   color: var(--color--light);
 }
 
-/* .content {
-  max-width: 10rem;
-  margin: 0 auto;
-} */
-
 html {
   font-size: 62.5%;
 }
@@ -22,7 +17,7 @@ html {
 /* 1800 */
 @media (min-width: 112.5em) {
   html {
-    font-size: 75%;
+    font-size: 77%;
   }
 }
 
