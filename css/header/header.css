@@ -106,8 +106,8 @@
     width: auto;
   }
   .header__secondary li:nth-child(3) a::before {
-    width: 2.2rem;
-    height: 2.3rem;
+    width: 1.6rem;
+    height: 1.7rem;
     margin-right: 0.8rem;
     bottom: -0.2rem;
   }
@@ -153,9 +153,9 @@
     display: block;
     width: 3rem;
     height: 0.2rem;
-    background-color: var(--color--secondary);
-    box-shadow: 0 0.8rem 0 var(--color--secondary),
-      0 -0.8rem 0 var(--color--secondary);
+    background-color: var(--color--secondary-light);
+    box-shadow: 0 0.8rem 0 var(--color--secondary-light),
+      0 -0.8rem 0 var(--color--secondary-light);
     transition: all 0.3s;
   }
 
@@ -225,7 +225,7 @@
   }
 
   .btn__mobile {
-    background-color: var(--color--secondary);
+    background-color: var(--color--secondary-light);
     grid-column: 1/-1;
     border-radius: 2px;
     font-size: 2rem;

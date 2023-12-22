@@ -2,7 +2,7 @@
   --color--primary: #110c09;
   --color--primary-light: #6c6967;
   --color--primary-border: #1b1b1b;
-  --color--secondary: #7bc42d;
+  --color--secondary-light: #7bc42d;
   --color--secondary-dark: #609725;
   --color--light: #fff;
   --color--light-2: #a39e9a;
@@ -11,8 +11,8 @@
 /* classes */
 .btn {
   padding: 1.8vw 2.6vw;
-  background-color: var(--color--secondary);
-  border: 0.3rem solid var(--color--secondary);
+  background-color: var(--color--secondary-light);
+  border: 0.3rem solid var(--color--secondary-light);
   color: var(--color--primary);
   border-radius: 2px;
   font-size: 1.5vw;
