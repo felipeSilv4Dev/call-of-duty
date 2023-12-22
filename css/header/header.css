@@ -22,46 +22,55 @@
 .header__secondary {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.8rem;
 }
+
 .header__primary a,
 .header__secondary li:not(:last-child) a {
-  padding: 1rem 0.5rem;
   font-size: 1.8rem;
-  color: var(--color--primary-light);
+  padding: 1rem 0.5rem;
   transition: all 0.1s;
+  color: var(--color--primary-light);
 }
+
 .header__primary a:hover,
 .header__secondary li a:hover {
   color: var(--color--light);
 }
-.arrow {
-  font-size: 1.2rem;
-  font-weight: bold;
+
+.arrow__header {
+  position: relative;
+  font-size: 1rem;
+  top: -0.1rem;
 }
+
 .header__secondary li:first-child {
-  padding-right: 0.5rem;
-  border-right: 0.3em solid var(--color--primary-light);
+  padding-right: 0.5vw;
+  border-right: 0.2vw solid var(--color--primary-light);
 }
 
 .btn__header {
   font-size: 1.5rem;
 }
-.header__secondary li:nth-child(3n) a::before {
+
+.header__secondary li:nth-child(3) a::before {
   content: "";
-  background: url("../../img/icon_header.svg") no-repeat center center;
+  background: url("../../img/symbol-header.png") no-repeat center center;
   display: inline-block;
-  width: 1.8rem;
-  height: 1.8rem;
-  margin-right: 0.4rem;
+  position: relative;
   background-size: cover;
+  width: 1.5rem;
+  height: 1.6rem;
+  bottom: -0.2rem;
   opacity: 0.5;
   transition: all 0.1s;
+  margin-right: 0.5rem;
 }
 
-.header__secondary li:nth-child(3n):hover a::before {
+.header__secondary li:nth-child(3) a:hover::before {
   opacity: 1;
 }
+
 .mobile__button {
   display: none;
   border: none;
@@ -71,38 +80,59 @@
 .overlay {
   display: none;
 }
-@media only screen and (max-width: 80em) {
-  .header__primary a,
-  .header__secondary li:not(:last-child) a {
-    font-size: 1.4rem;
-  }
+
+.logo {
+  height: 2.3rem;
+  width: 12.8rem;
 }
-@media only screen and (max-width: 64em) {
+
+.header__primary a,
+.header__secondary li:not(:last-child) a {
+  padding: 0.5rem 0.3rem;
+  font-size: 1.4rem;
+}
+
+.btn__header {
+  padding: 1rem 1.5rem;
+}
+
+/* 2560 */
+@media (min-width: 160em) {
   .header {
-    padding: 1.9rem 1.5rem;
+    padding: 2rem 2.5rem;
   }
-
   .logo {
-    height: 2.3rem;
-    width: 12.8rem;
+    height: 4.3rem;
+    width: auto;
   }
-  .header__primary,
-  .header__secondary {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+  .header__secondary li:nth-child(3) a::before {
+    width: 2.2rem;
+    height: 2.3rem;
+    margin-right: 0.8rem;
+    bottom: -0.2rem;
+  }
+  .arrow__header {
+    font-size: 1.7rem;
   }
 
   .header__primary a,
   .header__secondary li:not(:last-child) a {
-    padding: 0.5rem 0.3rem;
-    font-size: 1.4rem;
+    font-size: 2.2rem;
   }
-
   .btn__header {
-    padding: 1rem 1.5rem;
+    font-size: 2rem;
+    padding: 1.5rem 2rem;
   }
 }
+
+/* 1800 */
+@media (min-width: 112.5em) {
+  .header__primary a,
+  .header__secondary li:not(:last-child) a {
+    font-size: 1.6rem;
+  }
+}
+
 /* mobile */
 @media only screen and (max-width: 57em) {
   .header {

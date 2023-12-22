@@ -10,12 +10,12 @@
 
 /* classes */
 .btn {
-  padding: 1.8rem 2.6rem;
+  padding: 1.8vw 2.6vw;
   background-color: var(--color--secondary);
   border: 0.3rem solid var(--color--secondary);
-  border-radius: 2px;
   color: var(--color--primary);
-  font-size: 1.5rem;
+  border-radius: 2px;
+  font-size: 1.5vw;
   transition: all 0.1s;
 }
 
