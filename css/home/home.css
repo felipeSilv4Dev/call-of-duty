@@ -124,7 +124,7 @@
     margin: 0;
     top: 69%;
     right: 4.2%;
-    gap: 2rem;
+    gap: 1.5rem;
   }
 
   .home__title {
@@ -143,13 +143,13 @@
   }
 
   .home__paragraph {
-    font-size: 2.9vw;
+    font-size: 2.8vw;
   }
   .register {
     font-size: 4vw;
   }
   .btn__home {
-    font-size: 2.2vw;
+    font-size: 2.3vw;
     padding: 2vw 2.5vw;
   }
   .btn__home .play {
@@ -164,10 +164,6 @@
 
 /* 540 */
 @media only screen and (max-width: 33.75em) {
-  .home__content {
-    gap: 1.5rem;
-  }
-
   .register {
     top: -0.5vw;
     right: -0.5vw;
