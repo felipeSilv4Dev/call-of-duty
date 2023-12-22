@@ -73,9 +73,7 @@
   .features__info-text h2 {
     font-size: 2.2rem;
   }
-  .features__info-text p {
-    font-size: 1.5rem;
-  }
+  .features__info-text p,
   .features__info-text span {
     font-size: 1.5rem;
   }
@@ -86,9 +84,7 @@
   .features__info-text h2 {
     font-size: 2.8rem;
   }
-  .features__info-text p {
-    font-size: 1.92rem;
-  }
+  .features__info-text p,
   .features__info-text span {
     font-size: 1.92rem;
   }
@@ -99,9 +95,7 @@
   .features__info-text h2 {
     font-size: 3.2rem;
   }
-  .features__info-text p {
-    font-size: 2.15rem;
-  }
+  .features__info-text p,
   .features__info-text span {
     font-size: 2.15rem;
   }
@@ -118,9 +112,7 @@
   .features__info-text h2 {
     font-size: 1.5vw;
   }
-  .features__info-text p {
-    font-size: 1.26vw;
-  }
+  .features__info-text p,
   .features__info-text span {
     font-size: 1.26vw;
   }

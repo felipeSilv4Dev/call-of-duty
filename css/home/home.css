@@ -171,9 +171,12 @@
 }
 
 /* 360 */
-@media only screen and (max-width: 23.43em) {
+@media only screen and (max-width: 23.4375em) {
   .home__title {
-    font-size: 2.7rem;
+    font-size: 5.5vw;
+  }
+  .home__paragraph {
+    font-size: 2.8vw;
   }
 }
 
