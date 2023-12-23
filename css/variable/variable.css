@@ -16,7 +16,7 @@
   color: var(--color--primary);
   border-radius: 2px;
   font-size: 1.5vw;
-  transition: all 0.1s;
+  transition: all 0.2s;
 }
 
 .btn:hover {

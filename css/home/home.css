@@ -122,7 +122,7 @@
 @media only screen and (max-width: 46.875em) {
   .home__content {
     margin: 0;
-    top: 69%;
+    top: 65%;
     right: 4.2%;
     gap: 1.5rem;
   }
@@ -182,9 +182,6 @@
 
 /* 280 */
 @media only screen and (max-width: 17.5em) {
-  .home__content {
-    top: 65%;
-  }
   .home__title {
     font-size: 2rem;
   }
