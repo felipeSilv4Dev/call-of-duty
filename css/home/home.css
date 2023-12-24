@@ -121,14 +121,20 @@
 /* 750 */
 @media only screen and (max-width: 46.875em) {
   .home__content {
-    margin: 0;
-    top: 65%;
+    top: 120rem;
     right: 4.2%;
-    gap: 1.5rem;
+    max-width: initial;
+    gap: 2.4rem;
+    margin: 0 4rem;
+  }
+  .home img {
+    opacity: 0.5;
   }
 
   .home__title {
-    font-size: 5.7vw;
+    font-size: 5vw;
+    max-width: initial;
+    position: relative;
   }
   .plus-1,
   .plus-2,
@@ -138,55 +144,83 @@
   }
 
   .register {
-    top: -0.5vw;
-    right: -0.5vw;
+    top: 0;
+    right: 0;
   }
 
   .home__paragraph {
-    font-size: 2.8vw;
+    max-width: initial;
+    font-size: 2.5rem;
   }
   .register {
     font-size: 4vw;
   }
+  .home__buttons {
+    gap: 2rem;
+  }
   .btn__home {
     font-size: 2.3vw;
-    padding: 2vw 2.5vw;
+    padding: 2.5vw 3vw;
   }
   .btn__home .play {
-    font-size: 2.8vw;
+    font-size: 4vw;
+    margin-right: 0.5rem;
   }
   .arrow {
     color: var(--color--light-2);
     font-size: 3vw;
-    padding: 0.5rem;
+    padding: 1rem;
+    margin-top: 1rem;
   }
 }
 
 /* 540 */
 @media only screen and (max-width: 33.75em) {
-  .register {
-    top: -0.5vw;
-    right: -0.5vw;
+  .home__content {
+    top: 60rem;
+    margin: 0 3.2rem;
+  }
+
+  .home__paragraph {
+    font-size: 1.6rem;
+  }
+  .arrow {
+    margin-top: 0;
+    padding: 0.8rem;
   }
 }
 
 /* 360 */
 @media only screen and (max-width: 23.4375em) {
-  .home__title {
-    font-size: 5.5vw;
+  .home__content {
+    top: 56rem;
+    gap: 1.5rem;
   }
+  .home__title {
+    font-size: 5vw;
+  }
+
   .home__paragraph {
-    font-size: 2.8vw;
+    font-size: 2.9vw;
+  }
+  .arrow {
+    margin-top: 0;
+    padding: 0.8rem;
   }
 }
 
 /* 280 */
 @media only screen and (max-width: 17.5em) {
+  .home__content {
+    top: 42rem;
+    margin: 0 2rem;
+    gap: 1rem;
+  }
   .home__title {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .home__paragraph {
-    font-size: 3.3vw;
+    font-size: 1.1rem;
   }
 }
