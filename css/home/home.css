@@ -121,11 +121,11 @@
 /* 750 */
 @media only screen and (max-width: 46.875em) {
   .home__content {
-    top: 120rem;
+    top: 63%;
     right: 4.2%;
     max-width: initial;
     gap: 2.4rem;
-    margin: 0 4rem;
+    margin: 0 calc(4rem - 15px) 0 4rem;
   }
   .home img {
     opacity: 0.5;
@@ -150,7 +150,7 @@
 
   .home__paragraph {
     max-width: initial;
-    font-size: 2.5rem;
+    font-size: 2.5vw;
   }
   .register {
     font-size: 4vw;
@@ -168,7 +168,7 @@
   }
   .arrow {
     color: var(--color--light-2);
-    font-size: 3vw;
+    font-size: 3.5vw;
     padding: 1rem;
     margin-top: 1rem;
   }
@@ -177,13 +177,9 @@
 /* 540 */
 @media only screen and (max-width: 33.75em) {
   .home__content {
-    top: 60rem;
-    margin: 0 3.2rem;
+    margin: 0 calc(3.2rem - 15px) 0 3.2rem;
   }
 
-  .home__paragraph {
-    font-size: 1.6rem;
-  }
   .arrow {
     margin-top: 0;
     padding: 0.8rem;
@@ -193,15 +189,18 @@
 /* 360 */
 @media only screen and (max-width: 23.4375em) {
   .home__content {
-    top: 56rem;
+    margin: 0 calc(2rem - 15px) 0 2rem;
+  }
+
+  .home__content {
     gap: 1.5rem;
   }
   .home__title {
-    font-size: 5vw;
+    font-size: 5.5vw;
   }
 
   .home__paragraph {
-    font-size: 2.9vw;
+    font-size: 2.8vw;
   }
   .arrow {
     margin-top: 0;
@@ -212,12 +211,7 @@
 /* 280 */
 @media only screen and (max-width: 17.5em) {
   .home__content {
-    top: 42rem;
-    margin: 0 2rem;
     gap: 1rem;
-  }
-  .home__title {
-    font-size: 1.8rem;
   }
 
   .home__paragraph {
