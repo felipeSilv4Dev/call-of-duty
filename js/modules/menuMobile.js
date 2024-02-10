@@ -7,6 +7,10 @@ const menuMobile = () => {
     if (currentTarget.id === "menuContainer") {
       menu.classList.toggle("active");
       nav.classList.toggle("active");
+
+      document.body.style.overflow = menu.classList.contains("active")
+        ? "hidden"
+        : "initial";
     }
   };
 
