@@ -6,51 +6,41 @@
 
 body {
   font-family: "Modern Warfare", Arial, Helvetica, sans-serif;
-  background-color: var(--color--primary);
-  color: var(--color--light);
+  background-color: var(--bg-body);
+  color: var(--type-1-light);
 }
 
 html {
   font-size: 62.5%;
 }
 
-/* 1800 */
-@media (min-width: 112.5em) {
-  html {
-    font-size: 77%;
-  }
-}
-
-/* 1280 */
-@media (max-width: 80em) {
+@media (max-width: 57em) {
   html {
     font-size: 56.25%;
   }
 }
 
-/* 1024 */
-@media (max-width: 64em) {
+@media (min-width: 112.5em) {
   html {
-    font-size: 50%;
+    font-size: 71.5%;
   }
 }
-
+@media (min-width: 160em) {
+  html {
+    font-size: 100%;
+  }
+}
 img {
   max-width: 100%;
 }
+
 li {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-a,
+
 a {
   text-decoration: none;
   color: inherit;
-}
-h1,
-h2,
-h3,
-h4 {
-  font-weight: 400;
 }
