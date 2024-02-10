@@ -30,6 +30,7 @@ header {
   background-color: var(--btn-2);
 }
 
+.menu_container,
 .menu,
 .nav_menu {
   display: none;
@@ -45,6 +46,7 @@ header {
   }
 
   .menu_container {
+    display: block;
     padding: 2rem;
     cursor: pointer;
     position: relative;
