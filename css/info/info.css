@@ -1,0 +1,112 @@
+.info {
+  background: url("../../img/info/bg-info.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.info_container {
+  padding: 5rem 0;
+  margin: 0 auto;
+  max-width: 78%;
+}
+.info_content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.info_content:last-child {
+  grid-template-columns: repeat(2, 1fr);
+}
+.info_content img {
+  width: 100%;
+}
+.info_content:not(:last-child) {
+  margin-bottom: 3.2rem;
+}
+
+.info_content-text h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: var(--btn-1);
+}
+.info_content-text p {
+  font-family: "TT Firs Neue", Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.info_content-span {
+  font-family: "TT Firs Neue", Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  color: var(--btn-1);
+}
+
+@media (min-width: 112.5em) {
+  .info_content-text h2 {
+    font-size: 2rem;
+  }
+  .info_content-text p {
+    font-size: 1.6rem;
+  }
+
+  .info_content-span {
+    font-size: 1.6rem;
+  }
+}
+
+@media only screen and (max-width: 64em) {
+  .info_container {
+    max-width: 90%;
+    padding: 3rem 0;
+  }
+  .info_content {
+    gap: 2rem;
+  }
+}
+
+@media only screen and (max-width: 48em) {
+  .info_content {
+    grid-template-columns: 1fr;
+  }
+
+  .info_content h2 {
+    font-size: 1.8rem;
+  }
+
+  .info_content p {
+    font-size: 1.6rem;
+  }
+
+  .info_content:last-child {
+    grid-template-columns: 1fr;
+  }
+  .info_content-span {
+    font-size: 1.4rem;
+  }
+  .info_content:last-child .info_content-text p {
+    margin-bottom: 0.7rem;
+  }
+}
+
+@media only screen and (max-width: 17.5em) {
+  .info_content {
+    gap: 1.5rem;
+  }
+
+  .info_content-text h2 {
+    font-size: 1.4rem;
+  }
+
+  .info_content p {
+    font-size: 1.2rem;
+  }
+
+  .info_content:last-child {
+    grid-template-columns: 1fr;
+  }
+  .info_content-span {
+    font-size: 1.4rem;
+  }
+}
