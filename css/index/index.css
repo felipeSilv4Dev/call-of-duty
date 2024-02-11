@@ -8,6 +8,7 @@ body {
   font-family: "Modern Warfare", Arial, Helvetica, sans-serif;
   background-color: var(--bg-body);
   color: var(--type-1-light);
+  height: 100%;
 }
 
 html {

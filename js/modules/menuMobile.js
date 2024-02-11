@@ -8,7 +8,7 @@ const menuMobile = () => {
       menu.classList.toggle("active");
       nav.classList.toggle("active");
 
-      document.body.style.overflow = menu.classList.contains("active")
+      document.body.style.overflowY = menu.classList.contains("active")
         ? "hidden"
         : "initial";
     }

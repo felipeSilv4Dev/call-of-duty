@@ -12,7 +12,7 @@ header {
 }
 .header_logo a:hover,
 .header_nav a:hover {
-  color: var(--type-1-light);
+  color: var(--type-2-light);
 }
 .header_logo img {
   height: 1.5vw;
@@ -121,6 +121,7 @@ header {
     background-color: var(--bg-body);
     visibility: visible;
     overflow: visible;
+    z-index: 1000;
   }
 
   @keyframes active {
@@ -152,7 +153,7 @@ header {
     flex: 0 0 100%;
     padding: 1.4rem 2rem;
     border-radius: 0.5rem;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     transform: all 0.2s;
   }
   .nav_menu-links a:active {
@@ -172,7 +173,7 @@ header {
     border-radius: 0.5rem;
     transform: all 0.2s;
     color: var(--bg-body);
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     opacity: 0;
   }
   .btn_menu:active {

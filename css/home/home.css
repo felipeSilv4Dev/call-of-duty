@@ -1,0 +1,157 @@
+.home {
+  position: relative;
+}
+.home_container {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 55%;
+}
+
+.home_container h1 {
+  font-size: 6.25rem;
+  max-width: 35ch;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.home_container h2 {
+  font-family: "TT Firs Neue", Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  margin: 0 auto;
+  max-width: 80ch;
+  margin-bottom: 1.5rem;
+}
+.home_btn {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  justify-content: center;
+}
+.home_btn-primary {
+  padding: 1.5rem 3rem;
+  background-color: var(--btn-1);
+  font-size: 1.2rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  color: var(--bg-body);
+  transition: all 0.2s;
+}
+.home_btn-secondary {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  padding: 1.2rem 2rem;
+  background-color: var(--btn-1);
+  font-size: 1.2rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  color: var(--bg-body);
+  transition: all 0.2s;
+}
+.home_btn-secondary i {
+  font-size: 1.8rem;
+}
+.home_btn-primary:hover,
+.home_btn-secondary:hover {
+  background: var(--btn-2);
+}
+.home_arrow {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+.home_arrow i {
+  font-size: 1.2rem;
+  padding: 1.5rem;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+@media (min-width: 112.5em) {
+  .home_container h1 {
+    font-size: 4.6vw;
+  }
+
+  .home_container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .home_btn-primary {
+    font-size: 1.4rem;
+    padding: 1.5rem 3rem;
+  }
+  .home_btn-secondary {
+    font-size: 1.4rem;
+    padding: 1.5rem 3rem;
+  }
+  .home_btn-secondary i {
+    font-size: 1.4rem;
+  }
+  .home_arrow i {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 64em) {
+  .home_container {
+    top: 76vh;
+  }
+
+  .home_container h1 {
+    font-size: 4.6vw;
+  }
+
+  .home_btn-secondary i {
+    font-size: 1.4rem;
+  }
+  .home_arrow i {
+    margin-top: 0.7rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 57em) {
+  .home_container {
+    top: 29vh;
+  }
+}
+@media (max-width: 48em) {
+  .home_container {
+    top: 48vh;
+  }
+  .home_container h1 {
+    font-size: 5vw;
+  }
+
+  .home_container h2 {
+    display: none;
+  }
+  .home_btn {
+    display: grid;
+    text-align: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .home_btn-primary {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+  .home_btn-secondary {
+    justify-content: center;
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+
+  .home_arrow i {
+    margin-top: 0.5rem;
+  }
+}
