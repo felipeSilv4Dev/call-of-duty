@@ -1,6 +1,7 @@
 header {
   justify-content: space-between;
   padding: 2rem 1.8rem;
+  overflow: hidden;
 }
 
 .header_logo,
@@ -87,17 +88,6 @@ header {
     top: 0.9rem;
     transition: all 0.3s;
   }
-
-  .nav_menu {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    width: 100%;
-    top: 6rem;
-    left: 0;
-    visibility: hidden;
-    overflow: hidden;
-  }
   .menu.active {
     background-color: transparent;
   }
@@ -109,16 +99,24 @@ header {
     transform: rotate(140deg);
     top: 0.1rem;
   }
+
   .nav_menu {
     display: flex;
+    position: absolute;
     flex-direction: column;
     justify-content: space-between;
+    visibility: hidden;
+    overflow: hidden;
+    width: 100%;
+    top: 8rem;
+
+    left: 0;
     padding: 4rem 2rem;
+    background-color: var(--bg-body);
   }
 
   .nav_menu.active {
-    height: calc(100vh - 6rem);
-    background-color: var(--bg-body);
+    height: calc(100vh - 8rem);
     visibility: visible;
     overflow: visible;
     z-index: 1000;

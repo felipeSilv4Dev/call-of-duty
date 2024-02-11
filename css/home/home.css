@@ -2,11 +2,10 @@
   position: relative;
   background: url("../../img/home/home-img.jpg") no-repeat center center;
   background-size: cover;
-  height: 100vh;
-  width: 100%;
+  height: calc(100vh - 9.2rem);
 }
 .home_container {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   position: absolute;
   display: flex;
@@ -107,6 +106,8 @@
   .home {
     background: url("../../img/home/home-img-2.jpg") no-repeat center center;
     background-size: cover;
+
+    height: calc(100vh - 7.6rem);
   }
 
   .home_container h1 {
@@ -116,9 +117,9 @@
 
 @media (max-width: 48em) {
   .home {
-    background-image: none;
     background: url("../../img/home/home-img-2.jpg") no-repeat center center;
     background-size: cover;
+    height: calc(100vh - 8rem);
   }
 
   .home_container h1 {
