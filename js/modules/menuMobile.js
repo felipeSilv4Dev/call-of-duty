@@ -7,7 +7,10 @@ const menuMobile = () => {
     if (currentTarget.id === "menuContainer") {
       menu.classList.toggle("active");
       nav.classList.toggle("active");
-
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth", // Rolagem suave
+      });
       document.body.style.overflowY = menu.classList.contains("active")
         ? "hidden"
         : "initial";
