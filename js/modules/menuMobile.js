@@ -4,20 +4,21 @@ const menuMobile = () => {
   const nav = document.getElementById("nav");
 
   const addActive = ({ currentTarget }) => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+
     if (currentTarget.id === "menuContainer") {
       menu.classList.toggle("active");
       nav.classList.toggle("active");
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth", // Rolagem suave
-      });
-      document.body.style.overflowY = menu.classList.contains("active")
+      document.body.style.overflow = menu.classList.contains("active")
         ? "hidden"
         : "initial";
     }
   };
 
-  container.addEventListener("click", addActive);
+  container.addEventListener("pointerdown", addActive);
 };
 
 export default menuMobile;
