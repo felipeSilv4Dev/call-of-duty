@@ -1,0 +1,95 @@
+.description {
+  height: 100vh;
+  background: url("../../img/description/description.jpg") no-repeat center
+    center;
+  background-size: cover;
+  position: relative;
+}
+
+.description_content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 40vw;
+  position: absolute;
+  right: 14rem;
+  top: 40%;
+}
+
+.description_content h2 {
+  font-size: 2.5rem;
+  max-width: 38ch;
+}
+
+.description_content p {
+  font-family: "TT Firs Neue", Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  max-width: 40vw;
+}
+
+@media (max-width: 64em) {
+  .description {
+    background: url("../../img/description/description-2.jpg") no-repeat center
+      center;
+    height: calc(100vh);
+    background-size: cover;
+  }
+
+  .description_content {
+    right: 10rem;
+    width: 60%;
+    height: 100%;
+    top: 0;
+    place-content: center;
+  }
+  .description_content h2 {
+    font-size: 2.5rem;
+    max-width: initial;
+  }
+
+  .description_content p {
+    font-size: 1.4rem;
+    max-width: initial;
+  }
+}
+
+@media (max-width: 57em) {
+  .description {
+    background: url("../../img/description/description-3.jpg") no-repeat center
+      center;
+    background-size: cover;
+
+    height: calc(100vh - 15.2rem);
+  }
+
+  .description_content {
+    right: 0;
+    top: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-end;
+    padding: 5rem 0;
+  }
+
+  .description_content h2 {
+    font-size: 5vw;
+    max-width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .description_content p {
+    font-size: 2vw;
+    max-width: 90%;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 57em) {
+  .description_content p {
+    font-size: 1.6rem;
+  }
+}
