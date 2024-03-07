@@ -102,14 +102,13 @@ header {
 
   .nav_menu {
     display: flex;
-    position: absolute;
+    position: fixed;
     flex-direction: column;
     justify-content: space-between;
     visibility: hidden;
     overflow: hidden;
     width: 100%;
     top: 8rem;
-
     left: 0;
     padding: 4rem 2rem;
     background-color: var(--bg-body);
@@ -139,8 +138,12 @@ header {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 2rem;
     width: 100%;
+    max-height: 70%;
+    gap: 2rem;
+    /* background-color: red; */
+    /* height: ; */
+    overflow-y: scroll;
   }
   .nav_menu.active .nav_menu-links {
     animation: active 0.4s ease;
