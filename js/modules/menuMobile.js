@@ -2,6 +2,7 @@ const menuMobile = () => {
   const container = document.getElementById("menuContainer");
   const menu = document.getElementById("menu");
   const nav = document.getElementById("nav");
+  const header = document.querySelector("header");
 
   const addActive = ({ currentTarget }) => {
     window.scrollTo({
@@ -12,6 +13,7 @@ const menuMobile = () => {
     if (currentTarget.id === "menuContainer") {
       menu.classList.toggle("active");
       nav.classList.toggle("active");
+      header.classList.toggle("active");
       document.body.style.overflow = menu.classList.contains("active")
         ? "hidden"
         : "initial";
